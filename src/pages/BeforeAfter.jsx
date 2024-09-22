@@ -3,12 +3,12 @@ import React from 'react';
 const beforeAfterImages = [
   'images/before1.png',
   'images/after1.png',
-  'images/before1.png',
-  'images/after1.png',
-  'images/before1.png',
-  'images/after1.png',
-  'images/before1.png',
-  'images/after1.png',
+  'images/before2.jpeg',
+  'images/after2.jpeg',
+  'images/before3.jpeg',
+  'images/after3.jpeg',
+  'images/before4.jpeg',
+  'images/after4.jpeg',
 ];
 
 const BeforeAfterSection = () => {
