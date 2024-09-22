@@ -1,25 +1,17 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import { Button,Img } from '../components';
 const HeroSection = () => {
   return (
     <>
-      <Helmet>
-        <title>Award-Winning Invisalign Treatment in Staines | Rothley Lodge Dental</title>
-        <meta
-          name="description"
-          content="Discover top Invisalign treatment at Rothley Lodge Dental, Staines. Enjoy a free consultation, award-winning service, and a confident smile with our custom aligners. Book now!"
-        />
-      </Helmet>
       <div className="relative w-full bg-[url('images/bg-img.png')] bg-cover bg-center">
         {/* Navbar */}
         <nav className="w-full bg-transparent py-4 px-16">
           <div className="container mx-auto flex items-center justify-between px-6">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <img src="/public/images/logo.png" alt="Logo" className="h-32 w-auto" />
+              <img src="/images/logo.png" alt="Logo" className="h-32 w-auto" />
             </div>
 
             {/* Nav Links */}
