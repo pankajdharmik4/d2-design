@@ -13,7 +13,7 @@ const HeroSection = () => {
           content="Discover top Invisalign treatment at Rothley Lodge Dental, Staines. Enjoy a free consultation, award-winning service, and a confident smile with our custom aligners. Book now!"
         />
       </Helmet>
-      <div className="relative w-full bg-[url('public/images/bg-img.png')] bg-cover bg-center">
+      <div className="relative w-full bg-[url('images/bg-img.png')] bg-cover bg-center">
         {/* Navbar */}
         <nav className="w-full bg-transparent py-4 px-16">
           <div className="container mx-auto flex items-center justify-between px-6">
