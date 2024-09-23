@@ -69,7 +69,7 @@ const HeroSection = () => {
             <p className="text-xs md:text-lg mb-8 text-center lg:text-left mx-[5%]">
               Rothley Lodge Dental is one of the top providers of Invisalign in the country. We’ve had the privilege of providing Invisalign to patients from all across the U.K. Our reputation for excellence has led us to winning numerous awards, both locally and nationally.
             </p>
-            <button className="bg-white text-xs md:text-sm lg:text-sl text-blue-900 font-bold md:mb-0 mb-8 py-2 md:py-3 px-4 md:px-6 rounded-md">
+            <button className="bg-white text-xs md:text-sm lg:text-xl text-blue-900 font-bold md:mb-0 mb-8 py-2 md:py-3 px-4 md:px-6 rounded-md">
               Get Free Invisalign Consultation
             </button>
           </div>
