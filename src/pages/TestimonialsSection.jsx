@@ -51,21 +51,21 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="py-16 relative">
-      <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center mb-8 mx-[10%]">
-          <h2 className="text-4xl font-bold text-gray-800">Our Services in the Eyes of Our Patients</h2>
-          <div className='px-16'>
+    <div className="py-16 relative bg-gray-100">
+      <div className="container mx-auto px-6 lg:px-[10%]">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4 md:mb-0">Our Services in the Eyes of Our Patients</h2>
+          <div className='px-4 md:px-16'>
             <h5 className='text-lg'>Opinions from our patients who have experienced dental services at our clinic.</h5>
             <div className='h-[2px] bg-black rounded mb-2'></div>
           </div>
         </div>
 
         {/* Testimonials Cards */}
-        <div className="flex items-center mx-[10%] p-4">
+        <div className="flex items-center mx-auto p-4">
           <div ref={scrollRef} className="flex overflow-x-auto space-x-4 scrollbar-hide">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white shadow-md rounded-lg p-4 w-[40%] flex-none">
+              <div key={index} className="bg-white shadow-lg rounded-lg p-4 w-[80%] md:w-[40%] flex-none">
                 <div className="flex items-center mb-2">
                   <img src={testimonial.image} alt={testimonial.name} className="w-16 h-16 rounded-full" />
                   <div className="ml-4 flex flex-col justify-center">

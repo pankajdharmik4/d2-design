@@ -20,11 +20,11 @@ const BeforeAfterSection = () => {
         </h2>
 
         {/* Grid for Before & After Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-[10%]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mx-[10%]">
           {beforeAfterImages.map((image, index) => (
             <div key={index} className="relative">
-              <img src={image} alt={`Before & After ${index + 1}`} className="w-full h-auto rounded-lg" />
-              <div className="absolute bottom-0 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
+              <img src={image} alt={`Before & After ${index + 1}`} className="w-full h-20 md:h-28 lg:h-36 rounded-lg" />
+              <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
                 {index % 2 === 0 ? 'Before' : 'After'}
               </div>
             </div>

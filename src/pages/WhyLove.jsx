@@ -1,128 +1,109 @@
-import { Text, Heading } from "../components";
-import UserProfile from "../components/UserProfile";
-import React, { Suspense } from "react";
 
-const comfortFeaturesGrid = [
-  { userImage: "images/img_image_8.png", userDescription: "Customised and comfortable fit with gumline trimming." },
-  { userImage: "images/img_image.png", userDescription: "Higher predictability with SmartTrack™ material." },
-  {
-    userImage: "images/img_image_8.png",
-    userDescription: "Clear aligners that are discreet and don’t interrupt your life.",
-  },
-  {
-    userImage: "images/img_image_8.png",
-    userDescription: (
-      <>
-        The right fit for you,
-        <br />
-        fits snugly around your teeth.
-      </>
-    ),
-  },
-  {
-    userImage: "images/img_image_8.png",
-    userDescription: "Clear aligners that are discreet and don’t interrupt your life.",
-  },
-  {
-    userImage: "images/img_image_8.png",
-    userDescription: (
-      <>
-        The right fit for you,
-        <br />
-        fits snugly around your teeth.
-      </>
-    ),
-  },
-];
 
 export default function InvisalignBenefitsSection() {
   return (
     <>
-      {/* invisalign benefits section */}
-      <div className="bg-gray-100 py-16 ">
-  <div className="container mx-auto px-6  ">
-    {/* Section Heading and Side Text */}
-    <div className="flex justify-between items-center mb-10 md:mx-[10%]">
-      <h2 className="text-3xl font-bold text-gray-800">Why We Love Invisalign?</h2>
-      <p className="text-lg text-gray-600 md:pr-20">Our Invisalign treatment can address a wide <br/> range of cosmetic dental issues such as:</p>
-    </div>
+      {/* Invisalign benefits section */}
+      <div className="bg-gray-100 py-16">
+        <div className="container mx-auto px-6">
+          {/* Section Heading and Side Text */}
+          <div className="flex flex-col md:flex-row justify-between items-center mb-10 md:mx-[10%]">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 md:mb-0">
+              Why We Love Invisalign?
+            </h2>
+            <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left">
+              Our Invisalign treatment can address a wide <br /> range of cosmetic dental issues such as:
+            </p>
+          </div>
 
-    {/* Cards Section */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
-      {/* Card 1 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-        <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-          <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">Customised and comfortable fit with gumline trimming.</h3>
- {/* //         <p className="text-gray-600">Card description goes here.</p> */}
+          {/* Cards Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
+            {/* Card 1 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+              <h3 className="text-sm md:text-lg font-semibold">
+                  The right fit for you,
+                  <br />
+                  fits snugly around your teeth.
+                </h3>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+                <img src="/images/img_image.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+              <h3 className="text-sm md:text-lg font-semibold">
+                  The right fit for you,
+                  <br />
+                  fits snugly around your teeth.
+                </h3>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+              <h3 className="text-sm md:text-lg font-semibold">
+                  The right fit for you,
+                  <br />
+                  fits snugly around your teeth.
+                </h3>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+              <h3 className="text-sm md:text-lg font-semibold">
+                  The right fit for you,
+                  <br />
+                  fits snugly around your teeth.
+                </h3>
+              </div>
+            </div>
+
+            {/* Card 5 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+              <h3 className="text-sm md:text-lg font-semibold">
+                  The right fit for you,
+                  <br />
+                  fits snugly around your teeth.
+                </h3>
+              </div>
+            </div>
+
+            {/* Card 6 */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+              </div>
+              <div>
+                <h3 className="text-sm md:text-lg font-semibold">
+                  The right fit for you,
+                  <br />
+                  fits snugly around your teeth.
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Card 2 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-        <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-          <img src="/images/img_image.png" alt="Avatar" className="h-14 w-14 rounded-full" />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">Higher predictability with SmartTrack™ material.</h3>
- {/* //         <p className="text-gray-600">Card description goes here.</p> */}
-        </div>
-      </div>
-
-      {/* Card 3 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-        <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-          <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">Clear aligners that are discreet and don’t interrupt your life.</h3>
- {/* //         <p className="text-gray-600">Card description goes here.</p> */}
-        </div>
-      </div>
-
-      {/* Card 4 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-        <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-          <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">The right fit for you,
-        <br />
-        fits snugly around your teeth.</h3>
- {/* //         <p className="text-gray-600">Card description goes here.</p> */}
-        </div>
-      </div>
-
-      {/* Card 5 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-        <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-          <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
-        </div>
-        <div>
-        <h3 className="text-lg font-semibold"> Clear aligners that are discreet and don’t interrupt your life.</h3>
- {/* //         <p className="text-gray-600">Card description goes here.</p> */}
-        </div>
-      </div>
-
-      {/* Card 6 */}
-      <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-        <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-          <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">The right fit for you,
-        <br />
-        fits snugly around your teeth.</h3>
- {/* //         <p className="text-gray-600">Card description goes here.</p> */}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
     </>
   );
 }

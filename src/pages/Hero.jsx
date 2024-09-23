@@ -1,39 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../components';
 
 const HeroSection = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <>
-      <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: "url('/images/bg-img.png')" }}>
+      <div className="relative w-full bg-repeat bg-center" style={{ backgroundImage: "url('/images/bg-img.png')" }}>
         {/* Navbar */}
-        <nav className="w-full bg-transparent py-4 px-16">
-          <div className="container mx-auto flex items-center justify-between px-6">
+        <nav className="w-full bg-transparent py-8 md:py-4 px-4 lg:px-16 ">
+          <div className="container mx-auto flex items-center justify-between px-4">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <img src="/images/logo.png" alt="Logo" className="h-32 w-auto" />
+              <img src="/images/logo.png" alt="Logo" className="h-16 md:h-24 lg:h-32 w-auto" />
             </div>
 
-            {/* Nav Links */}
-            <div className="hidden space-x-8 lg:flex">
-              <a href="#home" className="text-white text-lg">Home</a>
-              <a href="#about" className="text-white text-lg">About</a>
-              <a href="#services" className="text-white text-lg">Services</a>
-              <a href="#pricing" className="text-white text-lg">Pricing</a>
-              <a href="#contact" className="text-white text-lg">Contact</a>
+            {/* Nav Links for Desktop */}
+            <div className="hidden space-x-4 md:space-x-8 lg:flex">
+              <a href="#home" className="text-white text-sm lg:text-lg">Home</a>
+              <a href="#about" className="text-white text-sm lg:text-lg">About</a>
+              <a href="#services" className="text-white text-sm lg:text-lg">Services</a>
+              <a href="#pricing" className="text-white text-sm lg:text-lg">Pricing</a>
+              <a href="#contact" className="text-white text-sm lg:text-lg">Contact</a>
             </div>
 
             {/* Book Now Button */}
             <Button
               size="xs"
               variant="fill"
-              className="mr-[140px] text-white min-w-[200px] rounded-[12px] border-[1.335px] border-solid border-white-a700 px-[34px] font-medium md:mr-0 sm:px-4 "
+              className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-medium"
             >
               Book Now
             </Button>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden">
-              <button className="text-white focus:outline-none">
+            <div className="lg:hidden ml-4">
+              <button onClick={toggleMenu} className="text-white focus:outline-none">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -42,52 +48,58 @@ const HeroSection = () => {
           </div>
         </nav>
 
+        {/* Mobile Navbar Links */}
+        {isMenuOpen && (
+          <div className="lg:hidden z-40 bg-white absolute top-16 left-0 right-0 shadow-lg p-4">
+            <a href="#home" className="block text-black py-2">Home</a>
+            <a href="#about" className="block text-black py-2">About</a>
+            <a href="#services" className="block text-black py-2">Services</a>
+            <a href="#pricing" className="block text-black py-2">Pricing</a>
+            <a href="#contact" className="block text-black py-2">Contact</a>
+          </div>
+        )}
+
         {/* Hero Section */}
-        <div className="relative w-full h-[600px]">
-          {/* Left Section */}
-          <div className="absolute inset-y-0 left-0 w-2/4 flex items-center justify-center ml-[10%]">
-            <div className="text-white p-8">
-              <h1 className="text-5xl font-bold mb-4">
-                Award-winning Invisalign Treatment In Staines
-              </h1>
-              <p className="text-lg mb-8">
-                Rothley Lodge Dental is one of the top providers of Invisalign in the country. We’ve had the privilege of providing Invisalign to patients from all across the U.K. Our reputation for excellence has led us to winning numerous awards, both locally and nationally.
-              </p>
-              <button className="bg-white text-blue-900 font-bold py-3 px-6 rounded-md">
-                Get Free Invisalign Consultation
-              </button>
-            </div>
+        <div className="relative w-full h-auto md:h-[500px] lg:h-[600px] flex flex-col md:flex-row">
+          {/* Section 1: Text */}
+          <div className="flex flex-col items-center justify-center w-full lg:w-1/2 sm:pr-[50%] md:pr-0 md:p-6 lg:p-12 text-white">
+            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold mb-4 text-center lg:text-left mx-[5%]">
+              Award-winning Invisalign Treatment In Staines
+            </h1>
+            <p className="text-xs md:text-lg mb-8 text-center lg:text-left mx-[5%]">
+              Rothley Lodge Dental is one of the top providers of Invisalign in the country. We’ve had the privilege of providing Invisalign to patients from all across the U.K. Our reputation for excellence has led us to winning numerous awards, both locally and nationally.
+            </p>
+            <button className="bg-white text-xs md:text-sm lg:text-sl text-blue-900 font-bold md:mb-0 mb-8 py-2 md:py-3 px-4 md:px-6 rounded-md">
+              Get Free Invisalign Consultation
+            </button>
           </div>
 
-          {/* Image in the center */}
-          <div className="absolute bottom-0 ml-[20%] left-2/4 z-20 transform -translate-x-1/2">
+          {/* Section 2: Image and Button */}
+          <div className="relative hidden w-full lg:w-1/2 md:flex flex-col items-center justify-center p-6 lg:p-12">
+            {/* Image taking 3/4 width */}
             <img
               src="images/hero.png"
               alt="Center Image"
-              className="h-[600px] w-auto"
+              className="h-[300px] absolute bottom-0 md:h-[400px] lg:h-[600px] w-[60%] lg:mb-0"
             />
-          </div>
 
-          {/* Right Section */}
-          <div className="absolute inset-y-0 right-0 w-1/4 bg-white flex items-center justify-center">
-            <div className="flex flex-col items-center p-4 rounded-lg">
-              <Button
-                size="xs"
-                variant="fill"
-                className="mr-[140px] text-white min-w-[200px] rounded-[12px] border-[1.335px] border-solid border-white-a700 px-[34px] font-medium md:mr-0 sm:px-4 py-8"
-              >
-                No 1 
-                <br /> Top Best Clinics
-              </Button>
-            </div>
+            {/* Centered button */}
+            <Button
+              size="xs"
+              variant="fill"
+              className="text-white hidden lg:flex ml-[70%] min-w-[100px] lg:min-w-[200px] rounded-lg border border-white px-4 lg:px-[34px] py-4 lg:py-8 text-center"
+            >
+              No 1 <br /> Top Best Clinics
+            </Button>
           </div>
         </div>
 
-        <div className="absolute bottom-[-5%] left-0 w-[40%] ml-[10%] flex justify-around items-center  border border-white bg-white rounded-lg shadow-lg p-4">
-          <img src="images/img_image_4.png" alt="Logo 1" className="h-8" />
-          <img src="images/img_image_5.png" alt="Logo 2" className="h-8" />
-          <img src="images/img_image_6.png" alt="Logo 3" className="h-8" />
-          <img src="images/img_image_7.png" alt="Logo 4" className="h-8" />
+        {/* Logos */}
+        <div className="absolute bottom-[-5%] left-0 w-[90%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:ml-[10%]">
+          <img src="images/img_image_4.png" alt="Logo 1" className="h-4 md:h-8" />
+          <img src="images/img_image_5.png" alt="Logo 2" className="h-4 md:h-8" />
+          <img src="images/img_image_6.png" alt="Logo 3" className="h-4 md:h-8" />
+          <img src="images/img_image_7.png" alt="Logo 4" className="h-4 md:h-8" />
         </div>
       </div>
     </>
