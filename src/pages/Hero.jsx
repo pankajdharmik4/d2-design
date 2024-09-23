@@ -62,7 +62,7 @@ const HeroSection = () => {
         {/* Hero Section */}
         <div className="relative w-full h-auto md:h-[500px] lg:h-[600px] flex flex-col md:flex-row">
           {/* Section 1: Text */}
-          <div className="flex flex-col items-center justify-center w-full lg:w-1/2 sm:pr-[50%] md:pr-0 md:p-6 lg:p-12 text-white">
+          <div className="flex flex-col items-center justify-center w-full lg:w-1/2 md:pr-0 md:p-6 lg:p-12 text-white">
             <h1 className="text-xl md:text-3xl lg:text-5xl font-bold mb-4 text-center lg:text-left mx-[5%]">
               Award-winning Invisalign Treatment In Staines
             </h1>
@@ -96,10 +96,10 @@ const HeroSection = () => {
 
         {/* Logos */}
         <div className="absolute bottom-[-5%] left-0 w-[90%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:ml-[10%]">
-          <img src="images/img_image_4.png" alt="Logo 1" className="h-4 md:h-8" />
-          <img src="images/img_image_5.png" alt="Logo 2" className="h-4 md:h-8" />
-          <img src="images/img_image_6.png" alt="Logo 3" className="h-4 md:h-8" />
-          <img src="images/img_image_7.png" alt="Logo 4" className="h-4 md:h-8" />
+          <img src="images/img_image_4.png" alt="Logo 1" className="h-6 md:h-8" />
+          <img src="images/img_image_5.png" alt="Logo 2" className="h-6 md:h-8" />
+          <img src="images/img_image_6.png" alt="Logo 3" className="h-6 md:h-8" />
+          <img src="images/img_image_7.png" alt="Logo 4" className="h-6 md:h-8" />
         </div>
       </div>
     </>
