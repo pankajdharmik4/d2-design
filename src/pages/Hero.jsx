@@ -38,7 +38,7 @@ const HeroSection = () => {
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden ml-4">
-              <button onClick={toggleMenu} className="text-white bg-transparent focus:outline-none">
+              <button onClick={toggleMenu} className="text-white focus:outline-none">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>

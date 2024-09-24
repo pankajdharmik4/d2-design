@@ -41,7 +41,7 @@ const BeforeAfterSection = () => {
         <div className="md:hidden">
           <Carousel
             showThumbs={false}
-            showIndicators={true}
+            showIndicators={false}
             infiniteLoop
             showStatus={false}
             className="overflow-hidden"
