@@ -14,7 +14,7 @@ const FormSection = () => {
 
       {/* Form Section */}
       <div className="flex-1 flex items-center justify-center p-4">
-        <div className="bg-white shadow-lg rounded-lg p-6 w-[80%]">
+        <div className="bg-white shadow-lg rounded-lg p-6 md:w-[80%]">
           <h2 className="text-2xl mb-4 text-center font-montserrat font-semibold">
             Take The First Step Toward The Smile You’ve Always Wanted
           </h2>
