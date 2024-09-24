@@ -1,14 +1,39 @@
 import React from "react";
 
 export default function Bar() {
+  const handleClick = () => {
+    alert("Desktop image clicked!");
+  };
+
   return (
     <>
-      {/* main row section */}
-      <div className="bg-gray-300 rounded-lg p-16 m-16">
-      {/* Content inside the gray bar */}
-      {/* <p className="text-center text-gray-800">Your content goes here</p> */}
-    </div>
+      {/* Main row section */}
+      <div className="rounded-lg lg:p-16 lg:m-16 md:m-8 md:p-8 m-8 p-4">
+        
+        {/* Desktop rectangle poster (shown on medium screens and up) */}
+        <div
+          className="hidden md:block cursor-pointer"
+          onClick={handleClick}
+        >
+          <img 
+            src="images/poster1.png" 
+            alt="Desktop Poster" 
+            className="w-full h-auto rounded-lg"
+          />
+        </div>
+
+        {/* Mobile square poster (shown on small screens only) */}
+        <div className="block md:hidden"
+        onClick={handleClick}
+        >
+          <img 
+            src="images/poster2.png" 
+            alt="Mobile Poster" 
+            className="w-full h-auto rounded-lg object-cover mx-auto"
+          />
+        </div>
+
+      </div>
     </>
   );
 }
-

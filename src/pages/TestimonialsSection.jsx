@@ -54,9 +54,9 @@ const TestimonialsSection = () => {
     <div className="py-16 relative bg-gray-100">
       <div className="container mx-auto px-6 lg:px-[10%]">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4 md:mb-0">Our Services in the Eyes of Our Patients</h2>
+          <h2 className="text-4xl text-gray-800 mb-4 md:mb-0 font-lato font-bold">Our Services in the Eyes of Our Patients</h2>
           <div className='px-4 md:px-16'>
-            <h5 className='text-lg'>Opinions from our patients who have experienced dental services at our clinic.</h5>
+            <h5 className='text-lg font-montserrat font-normal'>Opinions from our patients who have experienced dental services at our clinic.</h5>
             <div className='h-[2px] bg-black rounded mb-2'></div>
           </div>
         </div>
@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
                 <div className="flex items-center mb-2">
                   <img src={testimonial.image} alt={testimonial.name} className="w-16 h-16 rounded-full" />
                   <div className="ml-4 flex flex-col justify-center">
-                    <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                    <h3 className="text-lg font-montserrat font-medium	">{testimonial.name}</h3>
                     <div className="flex">
                       {Array.from({ length: testimonial.rating }, (_, i) => (
                         <svg key={i} className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-gray-600 ">{testimonial.comment}</p>
+                <p className="text-gray-600 font-montserrat font-medium	italic">{testimonial.comment}</p>
               </div>
             ))}
           </div>

@@ -15,9 +15,9 @@ const App = () => {
     <>
        <Hero/>
        <Bar/>
+       <BeforeAfterSection/>
        <InvisalignBenefitsSection/>
        <HowItWorks/>
-       <BeforeAfterSection/>
        <FAQSection/>
        <TestimonialsSection/>
        <FormSection/>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel'; // Assuming you're using react-responsive-carousel
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
 
 const beforeAfterImages = [
   'images/before1.png',
@@ -7,7 +9,7 @@ const beforeAfterImages = [
   'images/after2.jpeg',
   'images/before3.jpeg',
   'images/after3.jpeg',
-  'images/before4.jpeg',
+  'images/before4.jpeg',  
   'images/after4.jpeg',
 ];
 
@@ -19,16 +21,56 @@ const BeforeAfterSection = () => {
           Before & After Invisalign Treatment
         </h2>
 
-        {/* Grid for Before & After Images */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mx-[10%]">
+        {/* Desktop View - Grid Layout */}
+        <div className="hidden md:grid grid-cols-1 lg:grid-cols-3 gap-8 mx-[10%]">
           {beforeAfterImages.map((image, index) => (
             <div key={index} className="relative">
-              <img src={image} alt={`Before & After ${index + 1}`} className="w-full h-20 md:h-28 lg:h-36 rounded-lg" />
+              <img
+                src={image}
+                alt={`Before & After ${index + 1}`}
+                className="w-full h-40 md:h-56 lg:h-72 rounded-lg"
+              />
               <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
                 {index % 2 === 0 ? 'Before' : 'After'}
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Mobile View - Carousel */}
+        <div className="md:hidden">
+          <Carousel
+            showThumbs={false}
+            showIndicators={true}
+            infiniteLoop
+            showStatus={false}
+            className="overflow-hidden"
+          >
+            {beforeAfterImages.map((image, index) => (
+              <div key={index} className="relative">
+                <img
+                  src={image}
+                  alt={`Before & After ${index + 1}`}
+                  className="w-full h-40 rounded-lg"
+                />
+                <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
+                  {index % 2 === 0 ? 'Before' : 'After'}
+                </div>
+              </div>
+            ))}
+          </Carousel>
+
+          {/* Horizontal Scrollbar */}
+          <div className="flex justify-center mt-4">
+            {beforeAfterImages.map((_, index) => (
+              <div
+                key={index}
+                className={`w-2 h-2 rounded-full mx-1 ${
+                  index === 0 ? 'bg-gray-800' : 'bg-gray-400'
+                }`}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

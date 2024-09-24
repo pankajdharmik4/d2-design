@@ -14,8 +14,8 @@ const FormSection = () => {
 
       {/* Form Section */}
       <div className="flex-1 flex items-center justify-center p-4">
-        <div className="bg-white shadow-lg rounded-lg p-6 w-full">
-          <h2 className="text-2xl font-bold mb-4 text-center">
+        <div className="bg-white shadow-lg rounded-lg p-6 w-[80%]">
+          <h2 className="text-2xl mb-4 text-center font-montserrat font-semibold">
             Take The First Step Toward The Smile You’ve Always Wanted
           </h2>
           <form>
@@ -32,7 +32,7 @@ const FormSection = () => {
               <input 
                 type="email" 
                 id="email" 
-                placeholder="Your Email" 
+                placeholder="Email" 
                 required 
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
               />
@@ -75,7 +75,7 @@ const FormSection = () => {
             </div>
             <button 
               type="submit" 
-              className="w-full bg-[#13192d] text-white font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300"
+              className="w-full bg-[#13192d] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300" 
             >
               Book Now!
             </button>

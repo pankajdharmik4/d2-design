@@ -8,10 +8,10 @@ export default function InvisalignBenefitsSection() {
         <div className="container mx-auto px-6">
           {/* Section Heading and Side Text */}
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 md:mx-[10%]">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 md:mb-0">
+            <h2 className="font-lato font-bold text-3xl font-bold text-gray-800 mb-4 md:mb-0 ">
               Why We Love Invisalign?
             </h2>
-            <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left">
+            <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left font-montserrat font-normal">
               Our Invisalign treatment can address a wide <br /> range of cosmetic dental issues such as:
             </p>
           </div>
@@ -19,15 +19,15 @@ export default function InvisalignBenefitsSection() {
           {/* Cards Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
             {/* Card 1 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
-              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center px-[10%]">
+              <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-8">
                 <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-semibold">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+              <h3 className="text-sm md:text-lg font-montserrat font-medium ">
+                  Customised and comfortable fit with gumline trimming.
+                  {/* <br /> */}
+                  {/* fits snugly around your teeth. */}
                 </h3>
               </div>
             </div>
@@ -38,7 +38,7 @@ export default function InvisalignBenefitsSection() {
                 <img src="/images/img_image.png" alt="Avatar" className="h-14 w-14 rounded-full" />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-semibold">
+              <h3 className="text-sm md:text-lg font-montserrat font-medium">
                   The right fit for you,
                   <br />
                   fits snugly around your teeth.
@@ -52,7 +52,7 @@ export default function InvisalignBenefitsSection() {
                 <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-semibold">
+              <h3 className="text-sm md:text-lg font-montserrat font-medium">
                   The right fit for you,
                   <br />
                   fits snugly around your teeth.
@@ -66,7 +66,7 @@ export default function InvisalignBenefitsSection() {
                 <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-semibold">
+              <h3 className="text-sm md:text-lg font-montserrat font-medium">
                   The right fit for you,
                   <br />
                   fits snugly around your teeth.
@@ -80,7 +80,7 @@ export default function InvisalignBenefitsSection() {
                 <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-semibold">
+              <h3 className="text-sm md:text-lg font-montserrat font-medium">
                   The right fit for you,
                   <br />
                   fits snugly around your teeth.
@@ -94,7 +94,7 @@ export default function InvisalignBenefitsSection() {
                 <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
               </div>
               <div>
-                <h3 className="text-sm md:text-lg font-semibold">
+                <h3 className="text-sm md:text-lg font-montserrat font-medium">
                   The right fit for you,
                   <br />
                   fits snugly around your teeth.

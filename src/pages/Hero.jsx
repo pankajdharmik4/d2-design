@@ -21,18 +21,17 @@ const HeroSection = () => {
 
             {/* Nav Links for Desktop */}
             <div className="hidden space-x-4 md:space-x-8 lg:flex">
-              <a href="#home" className="text-white text-sm lg:text-lg">Home</a>
-              <a href="#about" className="text-white text-sm lg:text-lg">About</a>
-              <a href="#services" className="text-white text-sm lg:text-lg">Services</a>
-              <a href="#pricing" className="text-white text-sm lg:text-lg">Pricing</a>
-              <a href="#contact" className="text-white text-sm lg:text-lg">Contact</a>
+              <a href="#home" className="text-white font-montserrat font-medium text-sm lg:text-lg">Why Invisalign</a>
+              <a href="#about" className="text-white font-montserrat font-medium text-sm lg:text-lg">About Us</a>
+              <a href="#services" className="text-white font-montserrat font-medium text-sm lg:text-lg">FAQ</a>
+              <a href="#pricing" className="text-white font-montserrat font-medium text-sm lg:text-lg">Testimonial</a>
             </div>
 
-            {/* Book Now Button */}
+            {/* Book Now Button for Desktop */}
             <Button
               size="xs"
               variant="fill"
-              className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-medium"
+              className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-montserrat font-medium invisible lg:visible"
             >
               Book Now
             </Button>
@@ -50,44 +49,66 @@ const HeroSection = () => {
 
         {/* Mobile Navbar Links */}
         {isMenuOpen && (
-          <div className="lg:hidden z-40 bg-white absolute top-16 left-0 right-0 shadow-lg p-4">
-            <a href="#home" className="block text-black py-2">Home</a>
-            <a href="#about" className="block text-black py-2">About</a>
-            <a href="#services" className="block text-black py-2">Services</a>
-            <a href="#pricing" className="block text-black py-2">Pricing</a>
-            <a href="#contact" className="block text-black py-2">Contact</a>
+          <div className="lg:hidden   z-40 bg-white absolute top-16 left-0 right-0 shadow-lg p-4">
+            {/* Mobile Menu Photo */}
+
+
+            {/* Mobile Menu Links */}
+            <a href="#home" className="block font-montserrat font-medium text-black py-2">Why Invisalign</a>
+            <a href="#about" className="block font-montserrat font-medium text-black py-2">About Us</a>
+            <a href="#pricing" className="block font-montserrat font-medium text-black py-2">FAQ</a>
+            <a href="#contact" className="block font-montserrat font-medium text-black py-2">Testimonial</a>
+
+            {/* Book Now Button for Mobile */}
+            <Button
+              size="xs"
+              variant="fill"
+              className="bg-[#13192D] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
+            >
+              Book Now
+            </Button>
           </div>
         )}
 
         {/* Hero Section */}
-        <div className="relative w-full h-auto md:h-[500px] lg:h-[600px] flex flex-col md:flex-row">
+        <div className="relative w-full h-auto md:h-[500px] lg:h-[600px] flex flex-col-reverse md:flex-row">
           {/* Section 1: Text */}
-          <div className="flex flex-col items-center justify-center w-full lg:w-1/2 md:pr-0 md:p-6 lg:p-12 text-white">
-            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold mb-4 text-center lg:text-left mx-[5%]">
-              Award-winning Invisalign Treatment In Staines
-            </h1>
-            <p className="text-xs md:text-lg mb-8 text-center lg:text-left mx-[5%]">
-              Rothley Lodge Dental is one of the top providers of Invisalign in the country. We’ve had the privilege of providing Invisalign to patients from all across the U.K. Our reputation for excellence has led us to winning numerous awards, both locally and nationally.
-            </p>
-            <button className="bg-white text-xs md:text-sm lg:text-xl text-blue-900 font-bold md:mb-0 mb-8 py-2 md:py-3 px-4 md:px-6 rounded-md">
-              Get Free Invisalign Consultation
-            </button>
-          </div>
+          <div className="flex flex-col items-center justify-center w-full lg:w-1/2 md:p-6 p-2 text-white">
+    <h1 className="text-xl md:text-3xl lg:text-5xl mb-4 text-center lg:text-left mx-[5%] font-lato font-bold">
+      Award-winning Invisalign Treatment In Staines
+    </h1>
+    <p className="text-xs md:text-lg mb-8 text-center lg:text-left mx-[5%] font-montserrat font-normal">
+      Rothley Lodge Dental is one of the top providers of Invisalign in the country. We’ve had the privilege of providing Invisalign to patients from all across the U.K. Our reputation for excellence has led us to winning numerous awards, both locally and nationally.
+    </p>
+    <button className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start lg:mx-[5%] md:mb-0 mb-[10%]">
+      Get Free Invisalign Consultation
+    </button>
+  </div>
+
+  {/* Section 2: hero_2 Image */}
+  <div className="relative md:hidden w-full flex flex-col items-center justify-center p-2">
+    <img
+      src="images/hero_2.png"
+      alt="Center Image"
+      className="h-[300px] md:h-[400px] lg:h-[600px] w-[80%] lg:mb-0"
+    />
+  </div>
 
           {/* Section 2: Image and Button */}
-          <div className="relative hidden w-full lg:w-1/2 md:flex flex-col items-center justify-center p-6 lg:p-12">
+          <div className="relative invisible md:visible  w-full lg:w-1/2 md:flex flex-col items-center justify-center p-6 lg:p-12">
             {/* Image taking 3/4 width */}
             <img
               src="images/hero.png"
               alt="Center Image"
-              className="h-[300px] absolute bottom-0 md:h-[400px] lg:h-[600px] w-[60%] lg:mb-0"
+              className="h-[300px] invisible md:visible absolute bottom-0 md:h-[400px] lg:h-[600px] w-[60%] lg:mb-0"
             />
 
+            
             {/* Centered button */}
             <Button
               size="xs"
               variant="fill"
-              className="text-white hidden lg:flex ml-[70%] min-w-[100px] lg:min-w-[200px] rounded-lg border border-white px-4 lg:px-[34px] py-4 lg:py-8 text-center"
+              className="text-white lg:text-xl md:text-sm hidden md:flex ml-[70%] w-[150px] lg:min-w-[200px] border border-white px-4 lg:px-[34px] py-4 lg:py-8 text-center font-montserrat font-medium rounded-lg md:rounded-[16px] lg:rounded-[20px]"
             >
               No 1 <br /> Top Best Clinics
             </Button>
