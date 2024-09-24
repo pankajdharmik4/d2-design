@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           <div className="flex-1 mb-6 lg:mb-0">
-            <h3 className="text-lg font-bold mb-2 font-montserrat font-semibold">Opening Hours</h3>
+            <h3 className="text-lg mb-2 font-montserrat font-semibold">Opening Hours</h3>
             <p className='font-montserrat font-medium	'>Mon - Fri: 9 AM - 6 PM</p>
             <p className='font-montserrat font-medium	'>Sat: 10 AM - 4 PM</p>
             <p className='font-montserrat font-medium	'>Sun: Closed</p>

@@ -3,14 +3,14 @@ import { Carousel } from 'react-responsive-carousel'; // Assuming you're using r
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
 
 const beforeAfterImages = [
-  'images/before1.png',
-  'images/after1.png',
-  'images/before2.jpeg',
-  'images/after2.jpeg',
-  'images/before3.jpeg',
-  'images/after3.jpeg',
-  'images/before4.jpeg',  
-  'images/after4.jpeg',
+  'images/ba_1.png',
+  'images/ba_2.png',
+  'images/ba_3.png',
+  'images/ba_4.png',
+  'images/ba_5.png',
+  'images/ba_6.png',
+  // 'images/before4.jpeg',  
+  // 'images/after4.jpeg',
 ];
 
 const BeforeAfterSection = () => {
@@ -28,11 +28,11 @@ const BeforeAfterSection = () => {
               <img
                 src={image}
                 alt={`Before & After ${index + 1}`}
-                className="w-full h-40 md:h-56 lg:h-72 rounded-lg"
+                className="w-full h-[300px] rounded-lg object-cover"
               />
-              <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
+              {/* <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
                 {index % 2 === 0 ? 'Before' : 'After'}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -51,11 +51,11 @@ const BeforeAfterSection = () => {
                 <img
                   src={image}
                   alt={`Before & After ${index + 1}`}
-                  className="w-full h-40 rounded-lg"
+                  className="w-full h-[300px] rounded-lg object-cover"
                 />
-                <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
+                {/* <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
                   {index % 2 === 0 ? 'Before' : 'After'}
-                </div>
+                </div> */}
               </div>
             ))}
           </Carousel>
