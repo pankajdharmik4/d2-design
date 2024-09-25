@@ -8,9 +8,9 @@ const Footer = () => {
           {/* Section 1 - Logo, Address, Contact */}
           <div className="flex-1 mb-6 lg:mb-0 text-center md:text-left">
             <img src="images/logo.png" alt="Logo" className="h-16 mx-auto md:mx-0" /> {/* Center align logo in mobile */}
-            <p className="pt-[5%] font-montserrat font-medium">4321 Invasign St, CA 12345</p>
-            <p className="font-montserrat font-medium my-2">+1 123 456 789</p>
-            <p className="font-montserrat font-medium">info@company.com</p>
+            <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines, Middlesex TW18 2DE</p>
+            <p className="font-montserrat font-medium my-2">01784 453448</p>
+            <p className="font-montserrat font-medium">info@rothleylodgedentalpractice.co.uk</p>
           </div>
 
           {/* Quick Links */}
