@@ -8,7 +8,7 @@ export default function Bar() {
   return (
     <>
       {/* Main row section */}
-      <div className="rounded-lg lg:p-16 lg:m-16 md:m-8 md:p-8 m-8 p-4">
+      <div className="rounded-lg lg:p-16 lg:mx-16 md:m-8 md:p-8 m-8 p-4">
         
         {/* Desktop rectangle poster (shown on medium screens and up) */}
         <div
@@ -29,7 +29,7 @@ export default function Bar() {
           <img 
             src="images/poster2.png" 
             alt="Mobile Poster" 
-            className="w-full h-auto rounded-lg object-cover mx-auto"
+            className="w-full h-auto rounded-lg object-cover mx-auto my-4"
           />
         </div>
 

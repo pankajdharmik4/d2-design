@@ -15,7 +15,7 @@ const beforeAfterImages = [
 
 const BeforeAfterSection = () => {
   return (
-    <div className="bg-gray-100 py-16">
+    <div id="gallery" className="bg-gray-100 py-16">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
           Before & After Invisalign Treatment
@@ -28,7 +28,7 @@ const BeforeAfterSection = () => {
               <img
                 src={image}
                 alt={`Before & After ${index + 1}`}
-                className="w-full h-[300px] rounded-lg object-cover"
+                className="w-full h-[300px] rounded-lg object-contain"
               />
               {/* <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
                 {index % 2 === 0 ? 'Before' : 'After'}
@@ -51,7 +51,7 @@ const BeforeAfterSection = () => {
                 <img
                   src={image}
                   alt={`Before & After ${index + 1}`}
-                  className="w-full h-[300px] rounded-lg object-cover"
+                  className="w-full h-[300px] rounded-lg object-contain"
                 />
                 {/* <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
                   {index % 2 === 0 ? 'Before' : 'After'}

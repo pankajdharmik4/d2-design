@@ -2,7 +2,7 @@ import React from 'react';
 
 const FormSection = () => {
   return (
-    <div className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
+    <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
       {/* Image Section */}
       <div className="flex-1 flex items-center justify-center p-4">
         <img 

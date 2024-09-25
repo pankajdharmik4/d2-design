@@ -8,6 +8,7 @@ import FAQSection from './pages/FAQ'
 import TestimonialsSection from './pages/TestimonialsSection'
 import FormSection from './pages/ContactUs'
 import Footer from './pages/Footer'
+import AboutUs from './pages/AboutUs'
 
 const App = () => {
   return (
@@ -16,8 +17,9 @@ const App = () => {
        <Hero/>
        <Bar/>
        <BeforeAfterSection/>
+       <AboutUs/>
        <InvisalignBenefitsSection/>
-       <HowItWorks/>
+       {/* <HowItWorks/> */}
        <FAQSection/>
        <TestimonialsSection/>
        <FormSection/>
