@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const FormSection = () => {
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedTime, setSelectedTime] = useState('');
+
   return (
     <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
       {/* Image Section */}
@@ -57,21 +62,23 @@ const FormSection = () => {
             </div>
             <div className="flex flex-col md:flex-row mb-4 space-y-4 md:space-y-0 md:space-x-4">
               <div className="flex-1">
-                <input 
-                  type="date" 
-                  id="date" 
-                  required 
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400 appearance-none" 
-                  placeholder="Select Date" 
+                <DatePicker 
+                  selected={selectedDate} 
+                  onChange={(date) => setSelectedDate(date)} 
+                  placeholderText="Select Date"
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                  dateFormat="yyyy-MM-dd"
+                  required
                 />
               </div>
               <div className="flex-1">
                 <input 
                   type="time" 
                   id="time" 
+                  value={selectedTime} 
+                  onChange={(e) => setSelectedTime(e.target.value)} 
                   required 
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400 appearance-none" 
-                  placeholder="Select Time" 
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
                 />
               </div>
             </div>
