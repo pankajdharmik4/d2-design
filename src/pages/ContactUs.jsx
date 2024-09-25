@@ -25,7 +25,7 @@ const FormSection = () => {
                 id="name" 
                 placeholder="Your Name" 
                 required 
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
               />
             </div>
             <div className="mb-4">
@@ -34,7 +34,7 @@ const FormSection = () => {
                 id="email" 
                 placeholder="Email" 
                 required 
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
               />
             </div>
             <div className="mb-4">
@@ -43,7 +43,7 @@ const FormSection = () => {
                 id="phone" 
                 placeholder="Your Phone Number" 
                 required 
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
               />
             </div>
             <div className="mb-4">
@@ -52,7 +52,7 @@ const FormSection = () => {
                 id="address" 
                 placeholder="Your Address" 
                 required 
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
               />
             </div>
             <div className="flex flex-col md:flex-row mb-4 space-y-4 md:space-y-0 md:space-x-4">
@@ -61,7 +61,8 @@ const FormSection = () => {
                   type="date" 
                   id="date" 
                   required 
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400 appearance-none" 
+                  placeholder="Select Date" 
                 />
               </div>
               <div className="flex-1">
@@ -69,7 +70,8 @@ const FormSection = () => {
                   type="time" 
                   id="time" 
                   required 
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400 appearance-none" 
+                  placeholder="Select Time" 
                 />
               </div>
             </div>
