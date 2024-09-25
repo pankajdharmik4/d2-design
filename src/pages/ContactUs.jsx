@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 
 const FormSection = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState('');
+  // Set default values
+  const today = new Date();
+  const defaultDate = today.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+  const defaultTime = today.toTimeString().split(' ')[0].slice(0, 5); // Format: HH:MM
+
+  const [selectedDate, setSelectedDate] = useState(defaultDate);
+  const [selectedTime, setSelectedTime] = useState(defaultTime);
 
   return (
     <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
@@ -62,13 +65,13 @@ const FormSection = () => {
             </div>
             <div className="flex flex-col md:flex-row mb-4 space-y-4 md:space-y-0 md:space-x-4">
               <div className="flex-1">
-                <DatePicker 
-                  selected={selectedDate} 
-                  onChange={(date) => setSelectedDate(date)} 
-                  placeholderText="Select Date"
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
-                  dateFormat="yyyy-MM-dd"
-                  required
+                <input 
+                  type="date" 
+                  id="date" 
+                  value={selectedDate} 
+                  onChange={(e) => setSelectedDate(e.target.value)} 
+                  required 
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
                 />
               </div>
               <div className="flex-1">
@@ -78,7 +81,7 @@ const FormSection = () => {
                   value={selectedTime} 
                   onChange={(e) => setSelectedTime(e.target.value)} 
                   required 
-                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
                 />
               </div>
             </div>
