@@ -51,18 +51,18 @@ const Footer = () => {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <img src="images/instagram.png" alt="Instagram" className="h-6" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/RothleyLodgePractice/" target="_blank" rel="noopener noreferrer">
               <img src="images/facebook.png" alt="Facebook" className="h-6 px-4" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/RothleyLodge" target="_blank" rel="noopener noreferrer">
               <img src="images/twitter.png" alt="Twitter" className="h-6" />
             </a>
           </div>
 
           {/* Privacy and Terms Links */}
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-[#13192d] font-montserrat font-medium pr-2">Privacy Policy</a>
-            <a href="#" className="text-white hover:text-[#13192d] font-montserrat font-medium">Terms and Conditions</a>
+            <a href="#" className="text-white hover:text-white font-montserrat font-medium pr-2">Privacy Policy</a>
+            <a href="#" className="text-white hover:text-white font-montserrat font-medium">Terms and Conditions</a>
           </div>
         </div>
       </div>

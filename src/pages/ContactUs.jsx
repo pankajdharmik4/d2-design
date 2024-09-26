@@ -14,7 +14,7 @@ const FormSection = () => {
       {/* Image Section */}
       <div className="flex-1 flex items-center justify-center p-4">
         <img 
-          src="images/form_img.png" 
+          src="images/contact.jpg" 
           alt="Form Illustration" 
           className="w-full max-w-xs lg:max-w-md h-auto" 
         />
