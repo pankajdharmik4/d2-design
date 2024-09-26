@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import beforeImage from '../assets/002.jpg';
+import afterImage from '../assets/001.jpg';
 
 const FormSection = () => {
   // Set default values
@@ -13,11 +16,17 @@ const FormSection = () => {
     <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
       {/* Image Section */}
       <div className="flex-1 flex items-center justify-center p-4">
-        <img 
+        {/* <img 
           src="images/contact.jpg" 
           alt="Form Illustration" 
           className="w-full max-w-xs lg:max-w-md h-auto" 
-        />
+        /> */}
+        <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage src={beforeImage} alt="Before" />}
+                itemTwo={<ReactCompareSliderImage src={afterImage} alt="After" />}
+                position={50} // Set the position based on the state
+                className="w-[80%] h-auto"
+              />
       </div>
 
       {/* Form Section */}
