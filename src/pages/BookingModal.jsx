@@ -5,8 +5,11 @@ const BookingModal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [preferredDate, setPreferredDate] = useState('');
   const [message, setMessage] = useState('');
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^\+?[0-9]{10,13}$/;
+  const isValidName = /^[a-zA-Z\s]+$/;
 
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -14,7 +17,7 @@ const BookingModal = ({ isOpen, onClose }) => {
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
 
   const validateName = (name) => {
-    if (name.trim().length > 1) {
+    if (isValidName.test(name) && name.trim().length > 1) {
       setNameError('');
       return true;
     } else {
@@ -22,9 +25,6 @@ const BookingModal = ({ isOpen, onClose }) => {
       return false;
     }
   };
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const phoneRegex = /^\+?[0-9]{10,13}$/;
 
   const validateEmail = (email) => {
     if (emailRegex.test(email)) {
@@ -59,12 +59,12 @@ const BookingModal = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     if (!isSubmitDisabled) {
-      console.log('Form submitted:', { name, email, phone, preferredDate, message });
+      console.log('Form submitted:', { name, email, phone, message });
       // Reset the form
       setName('');
       setEmail('');
       setPhone('');
-      setPreferredDate('');
+      // setPreferredDate('');
       setMessage('');
       onClose();
     }
@@ -119,7 +119,7 @@ const BookingModal = ({ isOpen, onClose }) => {
             {phoneError && <p className="text-red-500 text-sm mt-1">{phoneError}</p>}
           </div>
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="preferredDate" className="block text-sm font-medium text-gray-700">Preferred Date</label>
             <input
               type="date"
@@ -129,7 +129,7 @@ const BookingModal = ({ isOpen, onClose }) => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
               required
             />
-          </div>
+          </div> */}
 
           <div className="mb-4">
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message (Optional)</label>
