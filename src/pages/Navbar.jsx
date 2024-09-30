@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '../components'; // Adjust the import path based on your folder structure
 import BookingModal from './BookingModal'; // Adjust the import path as needed
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faPhone } from '@fortawesome/free-solid-svg-icons'; // Import the phone icon
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +25,9 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
-  useEffect(()=>{
-    openModal()
-  },[])
+  useEffect(() => {
+    openModal();
+  }, []);
 
   return (
     <>
@@ -44,15 +46,23 @@ const Navbar = () => {
             <a href="#testimonial" className="text-white font-montserrat font-medium text-sm lg:text-lg">Testimonial</a>
           </div>
 
-          {/* Book Now Button for Desktop */}
-          <Button
-            size="xs"
-            variant="fill"
-            onClick={openModal}
-            className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-montserrat font-medium invisible lg:visible"
-          >
-            Book Now
-          </Button>
+          {/* Book Now Button and Contact for Desktop */}
+          <div className="hidden lg:flex flex-col items-center">
+            <Button
+              size="xs"
+              variant="fill"
+              onClick={openModal}
+              className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-montserrat font-medium"
+            >
+              Book Now
+            </Button>
+
+            {/* Contact Number for Desktop */}
+            <a href="tel:01784453448" className="text-white hover:text-gray-300 flex items-center text-xl mt-2">
+              <FontAwesomeIcon icon={faPhone} className="mr-2" />
+              01784 453448
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden ml-4">
@@ -80,6 +90,12 @@ const Navbar = () => {
             >
               Book Now
             </Button>
+
+            {/* Contact Number for Mobile */}
+            <a href="tel:01784453448" className="text-black hover:text-[#13192d] flex items-center text-xl mt-4">
+              <FontAwesomeIcon icon={faPhone} className="mr-2" />
+              01784 453448
+            </a>
           </div>
         )}
       </nav>
