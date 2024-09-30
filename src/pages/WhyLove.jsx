@@ -36,7 +36,7 @@ export default function InvisalignBenefitsSection() {
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
-                  src="/images/img_image.png" 
+                  src="/images/img_image_8.png" 
                   alt="Avatar" 
                   className="h-14 w-14 object-cover rounded-full" 
                 />
