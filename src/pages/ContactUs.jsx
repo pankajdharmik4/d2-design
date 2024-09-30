@@ -118,7 +118,7 @@ const FormSection = () => {
               {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
             </div>
             <div className="mb-4">
-              <input 
+              <textarea 
                 type="text" 
                 id="message" 
                 placeholder="Message" 
