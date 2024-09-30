@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel'; // Assuming you're using react-responsive-carousel
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
 
@@ -6,14 +6,14 @@ const beforeAfterImages = [
   'images/ba_1.png',
   'images/ba_2.png',
   'images/ba_3.png',
-  'images/ba_4.png',
-  'images/ba_5.png',
-  'images/ba_6.png',
-  // 'images/before4.jpeg',  
-  // 'images/after4.jpeg',
+  'images/111.jpeg',
+  'images/112.jpeg',
+  'images/113.jpeg',
 ];
 
 const BeforeAfterSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div id="gallery" className="bg-gray-100 py-16">
       <div className="container mx-auto px-6">
@@ -30,9 +30,6 @@ const BeforeAfterSection = () => {
                 alt={`Before & After ${index + 1}`}
                 className="w-full h-[300px] rounded-lg object-contain"
               />
-              {/* <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
-                {index % 2 === 0 ? 'Before' : 'After'}
-              </div> */}
             </div>
           ))}
         </div>
@@ -44,6 +41,7 @@ const BeforeAfterSection = () => {
             showIndicators={false}
             infiniteLoop
             showStatus={false}
+            onChange={(index) => setActiveIndex(index)} // Update active index on slide change
             className="overflow-hidden"
           >
             {beforeAfterImages.map((image, index) => (
@@ -53,9 +51,6 @@ const BeforeAfterSection = () => {
                   alt={`Before & After ${index + 1}`}
                   className="w-full h-[300px] rounded-lg object-contain"
                 />
-                {/* <div className="absolute bottom-2 left-0 right-0 text-center font-semibold text-white rounded-b-lg py-1">
-                  {index % 2 === 0 ? 'Before' : 'After'}
-                </div> */}
               </div>
             ))}
           </Carousel>
@@ -66,7 +61,7 @@ const BeforeAfterSection = () => {
               <div
                 key={index}
                 className={`w-2 h-2 rounded-full mx-1 ${
-                  index === 0 ? 'bg-gray-800' : 'bg-gray-400'
+                  index === activeIndex ? 'bg-gray-800' : 'bg-gray-400'
                 }`}
               ></div>
             ))}

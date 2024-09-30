@@ -8,7 +8,7 @@ export default function Bar() {
   return (
     <>
       {/* Main row section */}
-      <div className="rounded-lg lg:p-16 lg:mx-16 md:m-8 md:p-8 m-8 p-4">
+      <div className="rounded-lg lg:p-16 lg:mx-16 md:m-8 md:p-8 mx-8 p-4">
         
         {/* Desktop rectangle poster (shown on medium screens and up) */}
         <div
@@ -16,7 +16,7 @@ export default function Bar() {
           onClick={handleClick}
         >
           <img 
-            src="images/poster1.png" 
+            src="images/banner2.png" 
             alt="Desktop Poster" 
             className="w-full h-auto rounded-lg"
           />

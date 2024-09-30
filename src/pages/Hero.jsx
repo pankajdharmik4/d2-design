@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { Button } from '../components'; // Adjust the import path based on your folder structure
 import Modal from './BookingModal'; // Adjust the import path based on your folder structure
 
-const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+const Hero = ({ openModal }) => {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  // const openModal = () => setIsModalOpen(true);
+  // const closeModal = () => setIsModalOpen(false);
 
   return (
     <div id="home" className="relative w-full h-full md:mb-2 bg-repeat bg-center" style={{ backgroundImage: "url('/images/bg-img.png')" }}>
       <div className="relative w-full h-auto md:h-[500px] lg:h-[600px] flex flex-col-reverse md:flex-row">
         {/* Section 1: Text */}
-        <div className="flex flex-col items-center justify-center w-full lg:w-1/2 md:p-10 p-2 text-white">
-          <h1 className="text-xl md:text-3xl lg:text-5xl mb-4 text-center lg:text-left mx-[5%] font-lato font-bold">
+        <div className="flex flex-col mb-10 items-center justify-center w-full lg:w-1/2 md:p-10 p-2 text-white">
+          <h1 className="text-sx md:text-3xl lg:text-5xl md:mb-4 text-center lg:text-left mx-[5%] font-lato font-bold">
             Award-winning Invisalign Treatment In Staines
           </h1>
           <p className="text-xs md:text-lg mb-8 text-center lg:text-left mx-[5%] font-montserrat font-normal">
@@ -25,13 +25,13 @@ const Hero = () => {
         </div>
 
         {/* Section 2: hero_2 Image */}
-        <div className="relative md:hidden w-full flex flex-col items-center justify-center p-2">
+        {/* <div className="hidden  md:hidden w-full  flex-col items-center justify-center p-2">
           <img
             src="images/hero_2.png"
             alt="Center Image"
             className="h-[200px] md:h-[400px] lg:h-[600px] w-[80%] lg:mb-0"
           />
-        </div>
+        </div> */}
 
         {/* Section 2: Image and Button */}
         <div className="relative invisible md:visible w-full lg:w-1/2 md:flex flex-col items-center justify-center p-6 lg:p-12">
@@ -57,14 +57,14 @@ const Hero = () => {
 
       {/* Logos */}
       <div className="absolute bottom-[-5%] left-0 w-[90%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:ml-[10%]">
-        <img src="images/img_image_4.png" alt="Logo 1" className="h-6 md:h-8" />
+        {/* <img src="images/img_image_4.png" alt="Logo 1" className="h-6 md:h-8" /> */}
         <img src="images/img_image_5.png" alt="Logo 2" className="h-6 md:h-8" />
         <img src="images/img_image_6.png" alt="Logo 3" className="h-6 md:h-8" />
         <img src="images/img_image_7.png" alt="Logo 4" className="h-6 md:h-8" />
       </div>
 
       {/* Modal */}
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      {/* <Modal isOpen={isModalOpen} onClose={closeModal} /> */}
     </div>
   );
 };

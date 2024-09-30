@@ -64,15 +64,14 @@ const FormSection = () => {
               />
             </div>
             <div className="mb-4">
-              <input 
+              <textarea 
                 type="text" 
                 id="address" 
-                placeholder="Your Address" 
-                required 
+                placeholder="Message (Optional)" 
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
               />
             </div>
-            <div className="flex flex-col md:flex-row mb-4 space-y-4 md:space-y-0 md:space-x-4">
+            {/* <div className="flex flex-col md:flex-row mb-4 space-y-4 md:space-y-0 md:space-x-4">
               <div className="flex-1">
                 <input 
                   type="date" 
@@ -93,7 +92,7 @@ const FormSection = () => {
                   className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400" 
                 />
               </div>
-            </div>
+            </div> */}
             <button 
               type="submit" 
               className="w-full bg-[#13192d] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300" 

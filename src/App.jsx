@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Hero from './pages/Hero'
 import Bar from './pages/Bar'
 import InvisalignBenefitsSection from './pages/WhyLove'
@@ -13,16 +13,23 @@ import Navbar from './pages/Navbar'
 import Hero1 from './pages/Hero1'
 import Hero2 from './pages/Hero2'
 import HeroCarousel from './pages/HeroSection'
-
+import BookingModal from './pages/BookingModal'
 const App = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
  
     <>
         <Navbar/>
+        <BookingModal isOpen={isModalOpen} onClose={closeModal} />
+
        {/* <Hero/> */}
        {/* <Hero1/> */}
        {/* <Hero2/> */}
-       <HeroCarousel/>
+       <HeroCarousel openModal={openModal}/>
        <Bar/>
        <BeforeAfterSection/>
        <AboutUs/>

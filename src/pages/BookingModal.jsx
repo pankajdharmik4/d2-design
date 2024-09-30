@@ -34,7 +34,7 @@ const BookingModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 md:mx-0 mx-2">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 md:mx-0 mx-2 w-full h-full">
       <div className="bg-white rounded-lg p-6 md:p-8 max-w-md w-full shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-[#13192D] text-center">Book Your Appointment</h2>
         <form onSubmit={handleSubmit}>
@@ -74,7 +74,7 @@ const BookingModal = ({ isOpen, onClose }) => {
               required
             />
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="preferredDate" className="block text-sm font-medium text-gray-700">Preferred Date</label>
             <input
               type="date"
@@ -85,7 +85,7 @@ const BookingModal = ({ isOpen, onClose }) => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
               required
             />
-          </div>
+          </div> */}
           <div className="mb-4">
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message (Optional)</label>
             <textarea

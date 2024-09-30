@@ -7,7 +7,8 @@ import Hero from './Hero';
 import Hero1 from './Hero1';
 import Hero2 from './Hero2';
 
-const HeroCarousel = () => {
+const HeroCarousel = ({openModal}) => {
+  
   return (
     <Swiper
       spaceBetween={10}
@@ -18,16 +19,16 @@ const HeroCarousel = () => {
         delay: 4000, // Time in milliseconds for each slide
         disableOnInteraction: false, // Keep autoplay running after interaction
       }}
-      className="w-full"
+      className="w-full md:h-auto h-[350px]"
     >
-      <SwiperSlide>
-        <Hero />
+      <SwiperSlide > {/* Adjust heights as needed */}
+        <Hero openModal={openModal}/>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide >
         <Hero1 />
       </SwiperSlide>
-      <SwiperSlide>
-        <Hero2 />
+      <SwiperSlide >
+        <Hero2 openModal={openModal} />
       </SwiperSlide>
     </Swiper>
   );
