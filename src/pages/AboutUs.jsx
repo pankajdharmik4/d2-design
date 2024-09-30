@@ -23,7 +23,7 @@ const AboutUs = () => {
             At Rothley Lodge Dental Surgery, we combine over a century of family-focused care with cutting-edge technology. As the oldest dental practice in Staines, we’ve built lasting relationships with generations of families. Our experienced team, many with over a decade of service, provides a range of modern treatments, including cosmetic and implant dentistry.
             </p>
             <p className="text-white font-montserrat font-normal">
-            Recognized for excellence, including awards like Best Young Dentist in the UK, we are committed to delivering top-tier care using advanced tools such as CAD-CAM CEREC crowns and 3D imaging for a comfortable, efficient patient experience.
+            Recognised for excellence, including awards like Best Young Dentist in the UK, we are committed to delivering top-tier care using advanced tools such as CAD-CAM CEREC crowns and 3D imaging for a comfortable, efficient patient experience.
             </p>
           </div>
         </div>
