@@ -1,5 +1,3 @@
-
-
 export default function InvisalignBenefitsSection() {
   return (
     <>
@@ -19,85 +17,98 @@ export default function InvisalignBenefitsSection() {
           {/* Cards Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
             {/* Card 1 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+                <img 
+                  src="/images/img_image_8.png" 
+                  alt="Avatar" 
+                  className="h-14 w-14 object-cover rounded-full" 
+                />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+                <h3 className="text-sm md:text-lg font-montserrat font-medium">
+                Invisalign aligners are tailored  <br />to fit your teeth perfectly.
                 </h3>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img src="/images/img_image.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+                <img 
+                  src="/images/img_image.png" 
+                  alt="Avatar" 
+                  className="h-14 w-14 object-cover rounded-full" 
+                />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+                <h3 className="text-sm md:text-lg font-montserrat font-medium">
+                Clear aligners are barely visible,<br />letting you smile confidently.
                 </h3>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+                <img 
+                  src="/images/img_image_8.png" 
+                  alt="Avatar" 
+                  className="h-14 w-14 object-cover rounded-full" 
+                />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+                <h3 className="text-sm md:text-lg font-montserrat font-medium">
+                No metal brackets or wires,<br />  just smooth, comfortable aligners.
                 </h3>
               </div>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+                <img 
+                  src="/images/img_image_8.png" 
+                  alt="Avatar" 
+                  className="h-14 w-14 object-cover rounded-full" 
+                />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+                <h3 className="text-sm md:text-lg font-montserrat font-medium">
+                You can take them out to eat,<br /> drink, and brush, making life easier.
                 </h3>
               </div>
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+                <img 
+                  src="/images/img_image_8.png" 
+                  alt="Avatar" 
+                  className="h-14 w-14 object-cover rounded-full" 
+                />
               </div>
               <div>
-              <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+                <h3 className="text-sm md:text-lg font-montserrat font-medium">
+                Invisalign offers a clear plan  <br /> with predictable results.
                 </h3>
               </div>
             </div>
 
             {/* Card 6 */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-4 flex items-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#13192d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img src="/images/img_image_8.png" alt="Avatar" className="h-14 w-14 rounded-full" />
+                <img 
+                  src="/images/img_image_8.png" 
+                  alt="Avatar" 
+                  className="h-14 w-14 object-cover rounded-full" 
+                />
               </div>
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                  The right fit for you,
-                  <br />
-                  fits snugly around your teeth.
+                Improves oral health and boosts <br /> 
+                confidence with a straighter smile.
                 </h3>
               </div>
             </div>
@@ -107,4 +118,3 @@ export default function InvisalignBenefitsSection() {
     </>
   );
 }
-
