@@ -16,7 +16,7 @@ export default function Bar() {
           onClick={handleClick}
         >
           <img 
-            src="images/banner5.png" 
+            src="images/banner.png" 
             alt="Desktop Poster" 
             className="w-full h-auto rounded-lg"
           />
@@ -27,7 +27,7 @@ export default function Bar() {
         onClick={handleClick}
         >
           <img 
-            src="images/banner6.png" 
+            src="images/banner1.png" 
             alt="Mobile Poster" 
             className="w-full h-auto rounded-lg object-cover mx-auto my-4"
           />
