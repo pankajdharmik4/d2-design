@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "How much does Invisalign® Cost?",
-    answer: ["The cost of Invisalign® is determined by your specific needs, including the duration of treatment and the type of correction you are looking for. We offer to help you spread the cost—just ask for details when booking your appointment."]
+    answer: ["The cost of Invisalign® is determined by your specific needs, including the duration of treatment and the type of correction you are looking for. We offer payment financing plans to help you spread the cost—just ask for details when booking your appointment."]
   },
   {
     question: "After finishing treatment, how long do you need to wear retainers?",
