@@ -54,9 +54,9 @@ const TestimonialsSection = () => {
     <div id='testimonial' className="py-16 relative bg-gray-100">
       <div className="container mx-auto px-6 lg:px-[10%]">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <h2 className="text-4xl text-gray-800 mb-4 md:mb-0 font-lato font-bold">Our Services in the Eyes of Our Patients</h2>
+          <h2 className="text-4xl text-gray-800 mb-4 md:mb-0 font-lato font-bold">Our Reviews</h2>
           <div className='px-4 md:px-16'>
-            <h5 className='text-lg font-montserrat font-normal'>Opinions from our patients who have experienced dental services at our clinic.</h5>
+            {/* <h5 className='text-lg font-montserrat font-normal'>Opinions from our patients who have experienced dental services at our clinic.</h5> */}
             <div className='h-[2px] bg-black rounded mb-2'></div>
           </div>
         </div>

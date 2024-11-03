@@ -14,7 +14,7 @@ const Hero1 = () => {
       {/* Section 1: Title */}
       <div className="w-full text-center text-white py-12 px-4">
         <h1 className="text-xl md:mx-0 mx-4 md:text-4xl lg:text-5xl font-bold font-lato">
-        Generations of Dentists caring <br/> for Generations of Smile!
+        Generations of dentists caring <br/> for generations of smile!
         </h1>
         
       </div>

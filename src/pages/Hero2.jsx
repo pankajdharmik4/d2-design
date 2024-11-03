@@ -20,9 +20,9 @@ const Hero2 = ({ openModal }) => {
 
       {/* Section 2: Description */}
       <div className="w-full flex flex-col justify-center items-center md:items-end p-6 md:p-12 lg:p-16 md:absolute md:top-0 md:right-0 md:w-2/5">
-        <h2 className="text-xl md:text-3xl lg:text-4xl font-lato font-bold text-black mb-4 text-center md:text-left hidden md:block">
+        {/* <h2 className="text-xl md:text-3xl lg:text-4xl font-lato font-bold text-black mb-4 text-center md:text-left hidden md:block">
           Generations of Dentists caring <br /> for Generations of Smile!
-        </h2>
+        </h2> */}
 
         <button
           onClick={openModal}

@@ -9,9 +9,9 @@ export default function InvisalignBenefitsSection() {
             <h2 className="font-lato text-3xl font-bold text-gray-800 mb-4 md:mb-0 ">
               Why We Love Invisalign?
             </h2>
-            <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left font-montserrat font-normal">
+            {/* <p className="text-sm md:text-lg text-gray-600 md:pr-20 text-center md:text-left font-montserrat font-normal">
               Our Invisalign treatment can address a wide <br /> range of cosmetic dental issues such as:
-            </p>
+            </p> */}
           </div>
 
           {/* Cards Section */}
