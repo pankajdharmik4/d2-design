@@ -10,16 +10,16 @@ const Footer = () => {
           {/* Section 1 - Logo, Address, Contact */}
           <div className="flex-1 mb-6 lg:mb-0 text-center md:text-left">
             <img src="images/logo.png" alt="Logo" className="h-16 mx-auto md:mx-0" /> {/* Center align logo in mobile */}
-            <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br/> Middlesex TW18 2DE</p>
+            <p className="pt-[5%] font-montserrat font-medium">15 Cherry Orchard, Staines,<br /> Middlesex TW18 2DE</p>
             <p className="font-montserrat font-medium my-2">
-              <a href="tel:01784453448" className="text-black hover:text-[#13192d] flex items-center text-sm">
+              <a href="tel:01784453448" className="text-black hover:text-[#13192d] text-sm">
                 <FontAwesomeIcon icon={faPhone} className="mr-2" />
                 01784 453448
               </a>
             </p>
             <p className="font-montserrat font-medium">
-              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#13192d] flex items-center text-sm">
-                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#13192d] text-sm mx-auto md:mx-0">
+                <FontAwesomeIcon icon={faEnvelope} />
                 info@rothleylodgedentalpractice.co.uk
               </a>
             </p>
