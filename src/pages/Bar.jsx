@@ -27,7 +27,7 @@ export default function Bar() {
         onClick={handleClick}
         >
           <img 
-            src="images/banner1.png" 
+            src="images/banner2.png" 
             alt="Mobile Poster" 
             className="w-full h-auto rounded-lg object-cover mx-auto my-4"
           />

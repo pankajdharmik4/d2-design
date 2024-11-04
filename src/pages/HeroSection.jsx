@@ -6,10 +6,12 @@ import 'swiper/css/autoplay'; // Import Autoplay styles
 import Hero from './Hero';
 import Hero1 from './Hero1';
 import Hero2 from './Hero2';
+import Hero3 from './Hero3'
 
 const HeroCarousel = ({openModal}) => {
   
   return (
+    <>
     <Swiper
       spaceBetween={10}
       slidesPerView={1}
@@ -19,7 +21,7 @@ const HeroCarousel = ({openModal}) => {
         delay: 4000, // Time in milliseconds for each slide
         disableOnInteraction: false, // Keep autoplay running after interaction
       }}
-      className="w-full md:h-auto h-[350px]"
+      className="w-full md:h-auto h-[350px] hidden md:block"
     >
       <SwiperSlide > {/* Adjust heights as needed */}
         <Hero openModal={openModal}/>
@@ -31,6 +33,12 @@ const HeroCarousel = ({openModal}) => {
         <Hero2 openModal={openModal} />
       </SwiperSlide>
     </Swiper>
+    <div className="md:hidden">
+
+    <Hero3  openModal={openModal}/>
+    </div>
+    </>
+    
   );
 };
 

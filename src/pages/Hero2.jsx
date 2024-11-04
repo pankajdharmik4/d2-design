@@ -19,7 +19,7 @@ const Hero2 = ({ openModal }) => {
       </div>
 
       {/* Section 2: Description */}
-      <div className="w-full flex flex-col justify-center items-center md:items-end p-6 md:p-12 lg:p-16 md:absolute md:top-0 md:right-0 md:w-2/5">
+      <div className="w-full flex flex-col justify-center items-center md:items-end p-4 md:p-12 lg:p-16 md:absolute md:bottom-0 md:right-[5%] md:w-2/5">
         {/* <h2 className="text-xl md:text-3xl lg:text-4xl font-lato font-bold text-black mb-4 text-center md:text-left hidden md:block">
           Generations of Dentists caring <br /> for Generations of Smile!
         </h2> */}
