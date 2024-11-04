@@ -41,7 +41,7 @@ const Hero = ({ openModal }) => {
           <img
             src="images/hero.png"
             alt="Center Image"
-            className="absolute bottom-0 w-[80%] lg:w-[80%] max-h-[80vh]  object-contain lg:mb-0"
+            className="absolute bottom-0 w-[80%] lg:w-[80%] max-h-[85vh]  object-contain lg:mb-0"
           />
 
           {/* Centered button */}
