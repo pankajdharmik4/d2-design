@@ -16,12 +16,11 @@ const Hero = ({ openModal }) => {
           <h1 className="text-sx md:text-3xl lg:text-5xl md:mb-4 text-center lg:text-left mx-[5%] font-lato font-bold">
             Award-winning Invisalign Treatment In Staines
           </h1>
-          <p className="text-xs md:text-md mb-3 text-center lg:text-left mx-[5%] md:my-0 my-[5%] font-montserrat font-normal">
+          <p className="text-sm md:text-md text-center lg:text-left mx-[5%] md:my-0 my-[5%] font-montserrat font-normal">
             Get ready to say cheese with Invisalign! Our clear, sleek retainers provide a discreet way to achieve your perfect smile without the hassle of traditional braces. In just a few months, you can transform your teeth effortlessly. </p>
-          <p className="hidden md:block text-xs md:text-md mb-8 text-center lg:text-left mx-[5%] font-montserrat font-normal"> 
+          <p className="hidden md:block text-sm md:text-md mb-8 mt-4 text-center lg:text-left mx-[5%] font-montserrat font-normal"> 
             At Rothley Lodge Dental Practice, we take pride in our award-winning service and over 40 years of experience in dental care. We understand the importance of your dental health and strive to make your experience as comfortable as possible. Our dedicated team will support you throughout your journey, ensuring you achieve the beautiful smile you deserve!</p>
-
-          <button onClick={openModal} className="bg-white text-xs md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start lg:mx-[5%] md:mb-0 mb-[10%]">
+          <button onClick={openModal} className="bg-white text-sm md:text-sm lg:text-xl text-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start lg:mx-[5%] md:mb-0 mb-[10%]">
             Get Free Invisalign Consultation
           </button>
         </div>
