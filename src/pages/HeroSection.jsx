@@ -24,9 +24,9 @@ const HeroCarousel = ({openModal}) => {
       <SwiperSlide > {/* Adjust heights as needed */}
         <Hero openModal={openModal}/>
       </SwiperSlide>
-      <SwiperSlide >
+      {/* <SwiperSlide >
         <Hero1 />
-      </SwiperSlide>
+      </SwiperSlide> */}
       <SwiperSlide >
         <Hero2 openModal={openModal} />
       </SwiperSlide>
