@@ -8,7 +8,7 @@ const AboutUs = () => {
           {/* Section 1 - Image */}
           <div className="w-full md:w-[40%] mb-8 md:mb-0 px-4">
             <img
-              src="images/b1.jpg" // Replace with actual image path
+              src="images/b2.jpg" // Replace with actual image path
               alt="About Us"
               className="w-full h-auto rounded-lg object-contain"
             />
