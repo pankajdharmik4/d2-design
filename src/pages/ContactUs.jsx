@@ -77,9 +77,12 @@ const FormSection = () => {
       {/* Form Section */}
       <div className="flex-1 flex items-center justify-center p-4">
         <div className="bg-white shadow-lg rounded-lg p-6 md:w-[80%]">
-          <h2 className="text-2xl mb-4 text-center font-montserrat font-semibold">
-            Please fill out your details and a member of our team will be in touch
+          <h2 className="text-2xl mb-1 text-center font-montserrat font-semibold">
+            Take The First Step Toward The Smile You’ve Always Wanted
           </h2>
+          <div className="mb-4">
+            <p class="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
+          </div>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <input
@@ -117,7 +120,7 @@ const FormSection = () => {
               />
               {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
             </div>
-            <div className="mb-2">
+            <div className="mb-4">
               <textarea
                 type="text"
                 id="message"
@@ -127,15 +130,12 @@ const FormSection = () => {
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400"
               />
             </div>
-            <div className="mb-4">
-              <p class="text-gray-400 text-xs">The Team Will Contact You</p>
-            </div>
             <button
               type="submit"
               className={isSubmitDisabled ? "w-full bg-[#808080] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#808080] transition duration-300" : "w-full bg-[#13192d] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300"}
               disabled={isSubmitDisabled}
             >
-              Submit
+              Book Now
             </button>
           </form>
         </div>
