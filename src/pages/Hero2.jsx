@@ -27,13 +27,13 @@ const Hero2 = ({ openModal }) => {
           onClick={openModal}
           className="text-white text-xs md:text-sm lg:text-xl bg-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48"
         >
-          Get A Free Consultation
+          Get a Free Consultation
         </button>
       </div>
-      <div className="w-full flex flex-col justify-center items-center md:items-start p-4 md:p-12 lg:p-16 md:absolute md:bottom-0 md:left-[3%] md:w-2/5">
+      <div className="w-full flex flex-col justify-center items-center md:items-start p-4 md:p-12 lg:p-16 md:absolute md:bottom-20 md:left-[35%] md:w-2/5">
 
         <button disabled={true} className="bg-white text-xs md:text-sm lg:text-xl bg-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48">
-          {`    Simon Chard    `}
+          {`    Dr. Simon Chard    `}
         </button>
       </div>
 

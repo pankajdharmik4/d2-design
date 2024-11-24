@@ -11,12 +11,12 @@ const faqs = [
     question: "Is Invisalign noticeable?",
     answer: ["The aligners are made of clear, flexible plastic that is virtually invisible when worn. This makes them a popular alternative to traditional metal braces, which can be more noticeable."]
   },
-  {
-    question: "How often do I change aligners?",
-    answer: ["The frequency with which you should change your Invisalign® aligners depends on the specific treatment plan created for you by your orthodontist.",
-      "In general, however, you can expect to change your aligners approximately every 1-2 weeks."
-    ]
-  },
+  // {
+  //   question: "How often do I change aligners?",
+  //   answer: ["The frequency with which you should change your Invisalign® aligners depends on the specific treatment plan created for you by your orthodontist.",
+  //     "In general, however, you can expect to change your aligners approximately every 1-2 weeks."
+  //   ]
+  // },
   {
     question: "How long does Invisalign Treatment take?",
     answer: ["Invisalign® clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 6-12 months, depending on how complicated your case is. Most people feel a difference wearing Invisalign aligners after three months, and results are usually noticeable after six months."]
