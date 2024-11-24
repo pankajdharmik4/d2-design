@@ -28,7 +28,8 @@ const faqs = [
   {
     question: "After finishing treatment, how long do you need to wear retainers?",
     answer: ["The length of time you should wear retainers depends on your individual orthodontic treatment plan and your dentist’s recommendations.",
-      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign® treatment has been completed.&nbsp; During this time, your teeth will shift and settle into their new positions, and the retainers will help keep them in place.",
+      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign® treatment has been completed.",
+      "During this time, your teeth will shift and settle into their new positions, and the retainers will help keep them in place.",
       "After the initial few months, your dentist may recommend that you continue to wear your retainers at night for several years to prevent any relapse or shifting of the teeth."
     ]
   },
