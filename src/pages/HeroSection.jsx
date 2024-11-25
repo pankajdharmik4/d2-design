@@ -18,7 +18,7 @@ const HeroCarousel = ({openModal}) => {
       loop={true}
       modules={[Autoplay]} // Add Autoplay module here
       autoplay={{
-        delay: 4000, // Time in milliseconds for each slide
+        delay: 15000, // Time in milliseconds for each slide
         disableOnInteraction: false, // Keep autoplay running after interaction
       }}
       className="w-full md:h-auto h-[350px] hidden md:block"

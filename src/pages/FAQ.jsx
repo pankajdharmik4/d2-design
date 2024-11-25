@@ -11,12 +11,12 @@ const faqs = [
     question: "Is Invisalign noticeable?",
     answer: ["The aligners are made of clear, flexible plastic that is virtually invisible when worn. This makes them a popular alternative to traditional metal braces, which can be more noticeable."]
   },
-  {
-    question: "How often do I change aligners?",
-    answer: ["The frequency with which you should change your Invisalign® aligners depends on the specific treatment plan created for you by your orthodontist.",
-      "In general, however, you can expect to change your aligners approximately every 1-2 weeks."
-    ]
-  },
+  // {
+  //   question: "How often do I change aligners?",
+  //   answer: ["The frequency with which you should change your Invisalign® aligners depends on the specific treatment plan created for you by your orthodontist.",
+  //     "In general, however, you can expect to change your aligners approximately every 1-2 weeks."
+  //   ]
+  // },
   {
     question: "How long does Invisalign Treatment take?",
     answer: ["Invisalign® clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 6-12 months, depending on how complicated your case is. Most people feel a difference wearing Invisalign aligners after three months, and results are usually noticeable after six months."]
@@ -28,7 +28,8 @@ const faqs = [
   {
     question: "After finishing treatment, how long do you need to wear retainers?",
     answer: ["The length of time you should wear retainers depends on your individual orthodontic treatment plan and your dentist’s recommendations.",
-      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign® treatment has been completed.&nbsp; During this time, your teeth will shift and settle into their new positions, and the retainers will help keep them in place.",
+      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign® treatment has been completed.",
+      "During this time, your teeth will shift and settle into their new positions, and the retainers will help keep them in place.",
       "After the initial few months, your dentist may recommend that you continue to wear your retainers at night for several years to prevent any relapse or shifting of the teeth."
     ]
   },

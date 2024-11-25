@@ -50,7 +50,7 @@ export default function Header({ ...props }) {
         variant="fill"
         className="mr-[140px] min-w-[200px] rounded-[12px] border-[1.335px] border-solid border-white-a700 px-[34px] font-medium md:mr-0 sm:px-4"
       >
-        Book Now
+        Submit
       </Button>
     </header>
   );
