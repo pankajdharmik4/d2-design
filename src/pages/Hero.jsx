@@ -60,9 +60,13 @@ const Hero = ({ openModal }) => {
       {/* Logos */}
       <div className="absolute bottom-[-5%] left-0 w-[90%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:ml-[10%]">
         {/* <img src="images/img_image_4.png" alt="Logo 1" className="h-6 md:h-8" /> */}
-        <img src="images/img_image_5.png" alt="Logo 2" className="h-6 md:h-8" />
-        <img src="images/img_image_6.png" alt="Logo 3" className="h-6 md:h-8" />
-        <img src="images/img_image_7.png" alt="Logo 4" className="h-6 md:h-8" />
+        <img src="images/Denplan-Holder-Logo.png" alt="Logo 2" className="h-6 md:h-8" />
+        <img src="images/brand-logo1.jpg" alt="Logo 3" className="h-6 md:h-8" />
+        <img src="images/brand-logo2.jpg" alt="Logo 4" className="h-6 md:h-8" />
+        <img src="images/brand-logo3.jpg" alt="Logo 4" className="h-6 md:h-8" />
+        <img src="images/brand-logo4.jpg" alt="Logo 4" className="h-6 md:h-8" />
+        <img src="images/brand-logo5.jpg" alt="Logo 4" className="h-6 md:h-8" />
+
       </div>
 
       {/* Modal */}

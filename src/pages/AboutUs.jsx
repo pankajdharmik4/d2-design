@@ -1,8 +1,23 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel'; // Install this library first
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel styles
+
 
 const AboutUs = () => {
+
+  const images = [
+    "images/Denplan-Holder-Logo.png",
+    "images/brand-logo1.jpg",
+    "images/brand-logo2.jpg",
+    "images/brand-logo3.jpg",
+    "images/brand-logo4.jpg",
+    "images/brand-logo5.jpg",
+  ];
+
+
   return (
-    <div id="about" className="bg-[#13192d] py-16">
+    <div id="about" className="relative py-16">
+      <div className="bg-[#13192d] py-16">
       <div className="container mx-auto px-6 md:px-[10%]">
         <div className="flex flex-col md:flex-row items-center">
           {/* Section 1 - Image */}
@@ -26,6 +41,49 @@ const AboutUs = () => {
             Recognised for excellence, including awards like Best Young Dentist in the UK, we are committed to delivering top-tier care using advanced tools such as CAD-CAM CEREC crowns and 3D imaging for a comfortable, efficient patient experience.
             </p>
           </div>
+        </div>
+      </div>
+      </div>
+      <div className="mx-auto px-6 md:px-[10%] mt-12 ">
+        {/* Desktop View */}
+        <div className="hidden md:flex justify-between items-center gap-12">
+          {images.map((src, index) => (
+            <div
+              key={index}
+              className="flex justify-center items-center w-[18%] h-24"
+            >
+              <img
+                src={src}
+                alt={`Image ${index + 1}`}
+                className="h-full max-w-full object-contain "
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden">
+          <Carousel
+            showThumbs={false}
+            infiniteLoop
+            showStatus={false}
+            autoPlay
+            interval={3000}
+            showArrows={false}
+          >
+            {images.map((src, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center h-40"
+              >
+                <img
+                  src={src}
+                  alt={`Image ${index + 1}`}
+                  className="h-full max-w-full object-contain"
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
       </div>
     </div>
