@@ -11,7 +11,7 @@ const AboutUs = () => {
     "images/brand-logo2.jpg",
     "images/brand-logo3.jpg",
     "images/brand-logo4.jpg",
-    "images/brand-logo5.jpg",
+    // "images/brand-logo5.jpg",
   ];
 
 

@@ -30,7 +30,7 @@ const Hero2 = ({ openModal }) => {
           Get a Free Consultation
         </button>
       </div>
-      <div className="w-full flex flex-col justify-center items-center p-4 md:p-12 lg:p-16 md:absolute md:bottom-20">
+      <div className="w-full flex flex-col justify-center items-center p-4 md:p-12 lg:p-16 md:absolute md:bottom-0">
 
         <button disabled={true} className="bg-white text-xs md:text-sm lg:text-xl font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48">
           {`    Dr. Simon Chard    `}
