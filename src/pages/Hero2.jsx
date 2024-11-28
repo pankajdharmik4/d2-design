@@ -10,7 +10,7 @@ const Hero2 = ({ openModal }) => {
   return (
     <div className="relative flex flex-col md:flex-row w-full bg-[#ECEBF0]">
       {/* Section 1: Image */}
-      <div className="w-full md:w-3/5 relative">
+      <div className="w-full relative">
         <img
           src="/images/hero3.png" // Change to your image source
           alt="Hero Image"
@@ -30,9 +30,9 @@ const Hero2 = ({ openModal }) => {
           Get a Free Consultation
         </button>
       </div>
-      <div className="w-full flex flex-col justify-center items-center md:items-start p-4 md:p-12 lg:p-16 md:absolute md:bottom-20 md:left-[35%] md:w-2/5">
+      <div className="w-full flex flex-col justify-center items-center p-4 md:p-12 lg:p-16 md:absolute md:bottom-20">
 
-        <button disabled={true} className="bg-white text-xs md:text-sm lg:text-xl bg-[#13192D] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48">
+        <button disabled={true} className="bg-white text-xs md:text-sm lg:text-xl font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48">
           {`    Dr. Simon Chard    `}
         </button>
       </div>

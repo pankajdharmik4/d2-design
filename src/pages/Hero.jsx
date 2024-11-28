@@ -17,7 +17,7 @@ const Hero = ({ openModal }) => {
             Award-winning Invisalign Treatment In Staines
           </h1>
           <p className="text-sm md:text-md mb-3 text-center lg:text-left mx-[10%] md:my-0 my-[5%] font-montserrat font-normal">
-            Get ready to say cheese with Invisalign! Our clear, sleek retainers provide a discreet way to achieve your perfect smile without the hassle of traditional braces. In just a few months, you can transform your teeth effortlessly. </p>
+            Our clear, sleek retainers provide a discreet way to achieve your perfect smile without the hassle of traditional braces. In just a few months, you can transform your teeth effortlessly. </p>
           <p className="hidden md:block text-sm md:text-md mb-8 text-center lg:text-left mx-[10%] font-montserrat font-normal"> 
             At Rothley Lodge Dental Practice, we take pride in our award-winning service and over 40 years of experience in dental care. We understand the importance of your dental health and strive to make your experience as comfortable as possible. Our dedicated team will support you throughout your journey, ensuring you achieve the beautiful smile you deserve!</p>
 
@@ -45,21 +45,21 @@ const Hero = ({ openModal }) => {
           />
 
           {/* Centered button */}
-          <Button
+          {/* <Button
             onClick={openModal} // Add the click handler here as well
             size="xs"
             variant="fill"
             className="text-white lg:text-xl md:text-sm hidden md:flex ml-[70%] w-[150px] lg:min-w-[200px] border border-white px-4 lg:px-[34px] py-4 lg:py-8 text-center font-montserrat font-medium rounded-lg md:rounded-[16px] lg:rounded-[20px] z-20"
           >
             No 1 <br /> Top Best Clinics
-          </Button>
+          </Button> */}
         </div>
 
       </div>
 
       {/* Logos */}
-      <div className="absolute bottom-[-5%] left-0 w-[90%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:ml-[10%]">
-        {/* <img src="images/img_image_4.png" alt="Logo 1" className="h-6 md:h-8" /> */}
+      {/* <div className="absolute bottom-[-5%] left-0 w-[90%] md:w-[60%] lg:w-[40%] flex justify-around items-center border border-white bg-white rounded-lg shadow-lg p-2 md:p-4 ml-4 lg:ml-[10%]">
+        <img src="images/img_image_4.png" alt="Logo 1" className="h-6 md:h-8" />
         <img src="images/Denplan-Holder-Logo.png" alt="Logo 2" className="h-6 md:h-8" />
         <img src="images/brand-logo1.jpg" alt="Logo 3" className="h-6 md:h-8" />
         <img src="images/brand-logo2.jpg" alt="Logo 4" className="h-6 md:h-8" />
@@ -67,7 +67,7 @@ const Hero = ({ openModal }) => {
         <img src="images/brand-logo4.jpg" alt="Logo 4" className="h-6 md:h-8" />
         <img src="images/brand-logo5.jpg" alt="Logo 4" className="h-6 md:h-8" />
 
-      </div>
+      </div> */}
 
       {/* Modal */}
       {/* <Modal isOpen={isModalOpen} onClose={closeModal} /> */}

@@ -75,7 +75,7 @@ export default function InvisalignBenefitsSection() {
               </div>
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                You can take them out to eat,<br /> drink, and brush, making life easier.
+                You can take them out to eat,<br /> drink and brush making life easier.
                 </h3>
               </div>
             </div>

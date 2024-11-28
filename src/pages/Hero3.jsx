@@ -12,7 +12,7 @@ const Hero3 = ({ openModal }) => {
         <img
           src="/images/hero_2.png" // Replace with the actual image path
           alt="About Us"
-          className="w-72 h-72 rounded-lg object-contain mb-4 " // Adjust size as needed
+          className="w-64 h-64 rounded-lg object-contain m-4 " // Adjust size as needed
         />
         <h1 className="text-2xl font-lato font-bold text-white mb-2">
         Award-winning Invisalign Treatment In Staines

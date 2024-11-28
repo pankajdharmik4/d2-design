@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const faqs = [
-  {
-    question: "Is Invisalign painful?",
-    answer: ["While some people may experience mild discomfort during treatment, it is generally not considered painful.",
-      "During the initial stages of Invisalign treatment, some people may experience slight discomfort or pressure as their teeth shift into the correct position. This is a normal part of the process, and it usually only lasts a few days after switching to a new set of aligners.",
-      "Discomfort can typically be managed with over-the-counter pain relievers, such as ibuprofen."]
-  },
+  // {
+  //   question: "Is Invisalign painful?",
+  //   answer: ["While some people may experience mild discomfort during treatment, it is generally not considered painful.",
+  //     "During the initial stages of Invisalign treatment, some people may experience slight discomfort or pressure as their teeth shift into the correct position. This is a normal part of the process, and it usually only lasts a few days after switching to a new set of aligners.",
+  //     "Discomfort can typically be managed with over-the-counter pain relievers, such as ibuprofen."]
+  // },
   {
     question: "Is Invisalign noticeable?",
     answer: ["The aligners are made of clear, flexible plastic that is virtually invisible when worn. This makes them a popular alternative to traditional metal braces, which can be more noticeable."]
@@ -19,16 +19,16 @@ const faqs = [
   // },
   {
     question: "How long does Invisalign Treatment take?",
-    answer: ["Invisalign® clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 6-12 months, depending on how complicated your case is. Most people feel a difference wearing Invisalign aligners after three months, and results are usually noticeable after six months."]
+    answer: ["Invisalign clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 6-12 months, depending on how complicated your case is. Most people feel a difference wearing Invisalign aligners after three months, and results are usually noticeable after six months."]
   },
   {
-    question: "How much does Invisalign® Cost?",
-    answer: ["The cost of Invisalign® is determined by your specific needs, including the duration of treatment and the type of correction you are looking for. We offer payment financing plans to help you spread the cost—just ask for details when booking your appointment."]
+    question: "How much does Invisalign Cost?",
+    answer: ["The cost of Invisalign is determined by your specific needs, including the duration of treatment and the type of correction you are looking for. We offer payment financing plans to help you spread the cost—just ask for details when booking your appointment."]
   },
   {
     question: "After finishing treatment, how long do you need to wear retainers?",
     answer: ["The length of time you should wear retainers depends on your individual orthodontic treatment plan and your dentist’s recommendations.",
-      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign® treatment has been completed.",
+      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign treatment has been completed.",
       "During this time, your teeth will shift and settle into their new positions, and the retainers will help keep them in place.",
       "After the initial few months, your dentist may recommend that you continue to wear your retainers at night for several years to prevent any relapse or shifting of the teeth."
     ]
