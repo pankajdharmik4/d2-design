@@ -46,13 +46,13 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto px-6 md:px-[10%] mt-12 ">
+      <div className="mx-auto px-6 md:px-[10%] mt-10 ">
         {/* Desktop View */}
         <div className="hidden md:flex justify-between items-center gap-12">
           {images.map((src, index) => (
             <div
               key={index}
-              className="flex justify-center items-center w-[18%] h-24"
+              className="flex justify-center items-center w-[18%] h-20"
             >
               <img
                 src={src}
@@ -72,11 +72,12 @@ const AboutUs = () => {
             autoPlay
             interval={3000}
             showArrows={false}
+            showIndicators={false}
           >
             {images.map((src, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center h-40"
+                className="flex justify-center items-center h-20"
               >
                 <img
                   src={src}
