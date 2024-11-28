@@ -46,7 +46,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto px-6 md:px-[10%] mt-10 ">
+      <div className="mx-auto px-6 md:px-[10%] my-10">
         {/* Desktop View */}
         <div className="hidden md:flex justify-between items-center gap-12">
           {images.map((src, index) => (
