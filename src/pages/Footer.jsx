@@ -30,8 +30,8 @@ const Footer = () => {
             <h3 className="text-lg mb-2 font-montserrat font-semibold">Quick Links</h3>
             <ul>
               <li><a href="#" className="text-black hover:text-[#13192d] font-montserrat font-medium">Home</a></li>
-              <li><a href="#" className="text-black hover:text-[#13192d] font-montserrat font-medium">Why Invisalign?</a></li>
-              <li><a href="#about" className="text-black hover:text-[#13192d] font-montserrat font-medium">How Invisalign Works?</a></li>
+              <li><a href="#about" className="text-black hover:text-[#13192d] font-montserrat font-medium">Why Invisalign?</a></li>
+              {/* <li><a href="#about" className="text-black hover:text-[#13192d] font-montserrat font-medium">How Invisalign Works?</a></li> */}
               <li><a href="#gallery" className="text-black hover:text-[#13192d] font-montserrat font-medium">Gallery</a></li>
               <li><a href="#faq" className="text-black hover:text-[#13192d] font-montserrat font-medium">FAQ</a></li>
               <li><a href="#testimonial" className="text-black hover:text-[#13192d] font-montserrat font-medium">Testimonial</a></li>
