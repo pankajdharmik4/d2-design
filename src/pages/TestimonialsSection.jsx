@@ -3,40 +3,40 @@ import React, { useRef } from 'react';
 const testimonials = [
   {
     image: 'images/img_image_11.png',
-    name: 'Edward Elric',
-    comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
+    name: 'Sarah T.',
+    comment: 'I’ve always been self-conscious about my teeth, but Invisalign has completely transformed my smile! Rothley Lodge Dental Practice made the entire process smooth and stress-free. The team was incredibly supportive, and I couldn’t be happier with the results.',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Edward Elric',
-    comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
+    name: 'Emma P.',
+    comment: 'From my first consultation to the final results, Rothley Lodge Dental Practice exceeded all my expectations. Invisalign was comfortable and effective, and the staff’s expertise made all the difference. My smile is now straighter and more confident than ever!',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Edward Elric',
-    comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
+    name: 'Anna R.',
+    comment: 'Invisalign at Rothley Lodge was so easy and effective. I love my new smile!',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Edward Elric',
-    comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
+    name: 'Tom S.',
+    comment: 'Great experience with Invisalign here—quick, painless, and amazing results!',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Edward Elric',
-    comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
+    name: 'Daniel K.',
+    comment: 'Invisalign was life-changing! The staff were kind and professional throughout',
     rating: 5,
   },
-  {
-    image: 'images/img_image_11.png',
-    name: 'Edward Elric',
-    comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
-    rating: 5,
-  },
+  // {
+  //   image: 'images/img_image_11.png',
+  //   name: 'Edward Elric',
+  //   comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
+  //   rating: 5,
+  // },
 ];
 
 const TestimonialsSection = () => {
