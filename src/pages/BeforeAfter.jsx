@@ -3,9 +3,9 @@ import { Carousel } from 'react-responsive-carousel'; // Assuming you're using r
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
 
 const beforeAfterImages = [
-  'images/ba_1.png',
-  'images/ba_2.png',
-  'images/ba_3.png',
+  'images/ba111.jpeg',
+  'images/ba222.jpeg',
+  'images/ba333.jpeg',
   'images/111.jpeg',
   'images/112.jpeg',
   'images/113.jpeg',
