@@ -3,34 +3,34 @@ import React, { useRef } from 'react';
 const testimonials = [
   {
     image: 'images/img_image_11.png',
-    name: 'Sarah T.',
-    comment: 'I’ve always been self-conscious about my teeth, but Invisalign has completely transformed my smile! Rothley Lodge Dental Practice made the entire process smooth and stress-free. The team was incredibly supportive, and I couldn’t be happier with the results.',
+    name: 'Maria',
+    comment: 'I was always unhappy with the gaps in my teeth but kept putting it off. Then I came to the Open Day and met Dr. Simon Chard. Starting Invisalign was the best decision—I can’t stop smiling now!',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Emma P.',
-    comment: 'From my first consultation to the final results, Rothley Lodge Dental Practice exceeded all my expectations. Invisalign was comfortable and effective, and the staff’s expertise made all the difference. My smile is now straighter and more confident than ever!',
+    name: 'Adelina',
+    comment: 'I discovered the clinic on Instagram and decided to book a consultation with Gemma for Invisalign, teeth whitening, and cosmetic bonding. I’m so happy with my results—it’s the best decision I’ve ever made for my smile!',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Anna R.',
-    comment: 'Invisalign at Rothley Lodge was so easy and effective. I love my new smile!',
+    name: 'Victoria',
+    comment: 'I’ve been a patient here for 8 years and decided to treat myself for my birthday by starting Invisalign after attending the Open Evening. I’m so excited to have a bright, amazing smile just in time for my special day!',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Tom S.',
-    comment: 'Great experience with Invisalign here—quick, painless, and amazing results!',
+    name: 'Poppy',
+    comment: 'I used to be so unhappy with my smile and was always nervous about going to the dentist. But after having Invisalign, bonding, and whitening with Dr. Simon Chard, I finally feel confident and couldn’t be happier with my new smile!',
     rating: 5,
   },
-  {
-    image: 'images/img_image_11.png',
-    name: 'Daniel K.',
-    comment: 'Invisalign was life-changing! The staff were kind and professional throughout',
-    rating: 5,
-  },
+  // {
+  //   image: 'images/img_image_11.png',
+  //   name: 'Daniel K.',
+  //   comment: 'Invisalign was life-changing! The staff were kind and professional throughout',
+  //   rating: 5,
+  // },
   // {
   //   image: 'images/img_image_11.png',
   //   name: 'Edward Elric',
