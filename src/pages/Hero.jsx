@@ -14,13 +14,13 @@ const Hero = ({ openModal }) => {
         {/* Section 1: Text */}
         <div className="flex flex-col mb-10 items-center justify-center w-full lg:w-1/2 md:p-10 p-2 text-white">
           <h1 className="text-sx md:text-3xl lg:text-5xl md:mb-4 text-center lg:text-left mx-[10%] font-lato font-bold">
-            Award-winning Invisalign Treatment In Staines
+            Award-Winning Smiles in Surrey with Invisalign
           </h1>
-          <p className="text-sm md:text-md mb-3 text-center lg:text-left mx-[10%] md:my-0 my-[5%] font-montserrat font-normal">
-            Our clear, sleek retainers provide a discreet way to achieve your perfect smile without the hassle of traditional braces. In just a few months, you can transform your teeth effortlessly. </p>
-          <p className="hidden md:block text-sm md:text-md mb-8 text-center lg:text-left mx-[10%] font-montserrat font-normal"> 
-            At Rothley Lodge Dental Practice, we take pride in our award-winning service and over 40 years of experience in dental care. We understand the importance of your dental health and strive to make your experience as comfortable as possible. Our dedicated team will support you throughout your journey, ensuring you achieve the beautiful smile you deserve!</p>
-
+          <p className="text-sm md:text-md mb-4 text-center lg:text-left mx-[10%] md:my-0 my-[5%] font-montserrat font-normal">
+            Say hello to your perfect smile with Invisalign! These clear, discreet aligners let you straighten your teeth without the hassle of traditional braces. In just months, you can transform your smile effortlessly.  </p>
+            
+          <p className="hidden md:block text-sm md:text-md mb-8 text-center lg:text-left mx-[10%] font-montserrat font-normal">
+            At Rothley Lodge Dental, with over 40 years of trusted expertise and with an award-winning team, we’re here to help you achieve the smile confidence you deserve in a comfortable and caring environment.</p>
           <button onClick={openModal} className="bg-white text-sm md:text-sm lg:text-xl text-[#00102d] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start lg:mx-[10%] md:mb-0 mb-[10%]">
             Get a Free Consultation
           </button>

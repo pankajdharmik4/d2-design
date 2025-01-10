@@ -18,70 +18,70 @@ export default function InvisalignBenefitsSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
             {/* Card 1 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
                   className="h-14 w-14 object-cover rounded-full" 
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                Invisalign aligners are tailored  <br />to fit your teeth perfectly.
+               <b> Virtually Invisible:</b>  <br />Straighten your teeth discreetly with clear aligners that are barely noticeable.
                 </h3>
               </div>
             </div>
 
             {/* Card 2 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
                   className="h-14 w-14 object-cover rounded-full" 
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                Clear aligners are barely visible,<br />letting you smile confidently.
+                <b>Comfortable & Convenient:</b> <br />Removable aligners allow you to eat, drink, and brush as usual – no lifestyle interruptions.
                 </h3>
               </div>
             </div>
 
             {/* Card 3 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
                   className="h-14 w-14 object-cover rounded-full" 
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                No metal brackets or wires,<br />  just smooth, comfortable aligners.
+                <b>Fast Results:</b><br />  Most of our cases are focused on cosmetic improvements in adults and are thus finished in as little as just 4-6 months
                 </h3>
               </div>
             </div>
 
             {/* Card 4 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
                   className="h-14 w-14 object-cover rounded-full" 
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                You can take them out to eat,<br /> drink and brush making life easier.
+                <b>Whole-Body Wellness:</b><br /> Straighter teeth are easier to clean, lowering the risk of gum disease and promoting better overall health.
                 </h3>
               </div>
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
+            {/* <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
@@ -94,10 +94,10 @@ export default function InvisalignBenefitsSection() {
                 Invisalign offers a clear plan  <br /> with predictable results.
                 </h3>
               </div>
-            </div>
+            </div> */}
 
             {/* Card 6 */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
+            {/* <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
               <div className="bg-[#00102d] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
@@ -111,7 +111,7 @@ export default function InvisalignBenefitsSection() {
                 confidence with a straighter smile.
                 </h3>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

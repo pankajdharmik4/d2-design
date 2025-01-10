@@ -19,7 +19,7 @@ const faqs = [
   // },
   {
     question: "How long does Invisalign Treatment take?",
-    answer: ["Invisalign clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 6-12 months, depending on how complicated your case is. Most people feel a difference wearing Invisalign aligners after three months, and results are usually noticeable after six months."]
+    answer: ["Invisalign clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 4-12 months, depending on how complicated your case is. Most of our smiles are completed within 4-7 months."]
   },
   {
     question: "How much does Invisalign Cost?",
@@ -27,11 +27,7 @@ const faqs = [
   },
   {
     question: "After finishing treatment, how long do you need to wear retainers?",
-    answer: ["The length of time you should wear retainers depends on your individual orthodontic treatment plan and your dentist’s recommendations.",
-      "In general, you’ll need to wear your retainers regularly for at least several months after your Invisalign treatment has been completed.",
-      "During this time, your teeth will shift and settle into their new positions, and the retainers will help keep them in place.",
-      "After the initial few months, your dentist may recommend that you continue to wear your retainers at night for several years to prevent any relapse or shifting of the teeth."
-    ]
+    answer: ["To keep your teeth straight, you'll need to wear retainers for as long as you want your smile to stay straight! So forever! At our practice, we recommend a dual retention protocol—a combination of fixed and removable retainers—for predictable, long-term results. This ensures your new smile stays exactly where it should for the long term!"]
   },
 ];
 
