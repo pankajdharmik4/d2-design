@@ -15,12 +15,12 @@ const Hero3 = ({ openModal }) => {
           className="w-64 h-64 rounded-lg object-contain m-4 " // Adjust size as needed
         />
         <h1 className="text-2xl font-lato font-bold text-white mb-2">
-        Award-winning Invisalign Treatment In Staines
+        Award-Winning Smiles in Surrey with Invisalign
         </h1>
         <p className="text-xs font-montserrat font-normal text-white">
-        Get ready to say cheese with Invisalign! Our clear, sleek retainers provide a discreet way to achieve your perfect smile without the hassle of traditional braces. In just a few months, you can transform your teeth effortlessly.        </p>
+        Say hello to your perfect smile with Invisalign! These clear, discreet aligners let you straighten your teeth without the hassle of traditional braces. In just months, you can transform your smile effortlessly.         </p>
         <p className="text-xs font-montserrat font-normal text-white">
-        At Rothley Lodge Dental Practice, we boast over 40 years of experience and have earned our reputation as an award-winning practice. 
+        At Rothley Lodge Dental, with over 40 years of trusted expertise and with an award-winning team, we’re here to help you achieve the smile confidence you deserve in a comfortable and caring environment.
         </p>
         {/* <p className="text-xs font-montserrat font-normal text-white">
         Dental implants are designed to look and function like natural teeth, providing a stable foundation for crowns or bridges. Unlike dentures, they do not shift or slip, allowing you to eat, speak, and smile with confidence.
