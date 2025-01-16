@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../components'; // Adjust the import path as needed
+import axios from 'axios';
 
 const BookingModal = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
@@ -55,18 +56,37 @@ const BookingModal = ({ isOpen, onClose }) => {
   };
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!isSubmitDisabled) {
-      console.log('Form submitted:', { name, email, phone, message });
-      // Reset the form
-      setName('');
-      setEmail('');
-      setPhone('');
-      // setPreferredDate('');
-      setMessage('');
-      onClose();
+      setIsSubmitDisabled(true);
+
+      try {
+        const response = await axios.post('https://www.invisalign.rothleylodgedentalpractice.co.uk/my_server_project/public/index.php', {
+          name,
+          email,
+          phone,
+          message,
+          type: 'Invisalign'
+        });
+
+        if (response.data.success) {
+          console.log('Mail sent successfully');
+          // Reset the form
+          setName('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          onClose();
+        } else {
+          console.error('Failed to send mail:', response.data.error);
+        }
+      } catch (error) {
+        console.error('Error sending mail:', error);
+      } finally {
+        setIsSubmitDisabled(false);
+      }
     }
   };
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import beforeImage from '../assets/002.jpg';
 import afterImage from '../assets/001.jpg';
+import axios from 'axios';
 
 const FormSection = () => {
   // State for each field
@@ -9,6 +10,10 @@ const FormSection = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^\+?[0-9]{10,13}$/;
+  const isValidName = /^[a-zA-Z\s]+$/;
 
   // State for errors
   const [nameError, setNameError] = useState('');
@@ -48,18 +53,45 @@ const FormSection = () => {
     setIsSubmitDisabled(!isFormValid);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateName(name) && validateEmail(email) && validatePhone(phone)) {
-      // Handle form submission logic
-      console.log({ name, email, phone, message });
-      // Clear form data after submission
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
+
+    if (!isSubmitDisabled) {
       setIsSubmitDisabled(true);
+
+      try {
+        const response = await axios.post('https://www.invisalign.rothleylodgedentalpractice.co.uk/my_server_project/public/index.php', {
+          name,
+          email,
+          phone,
+          message,
+          type: 'invisalign'
+        });
+
+        if (response.data.success) {
+          console.log('Mail sent successfully');
+          setName('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          onClose();
+        } else {
+          console.error('Failed to send mail:', response.data.error);
+        }
+      } catch (error) {
+        console.error('Error sending mail:', error);
+      } finally {
+        setIsSubmitDisabled(false);
+      }
     }
+  };
+
+  const validateForm = () => {
+    const isNameValid = name.trim().length > 1;
+    const isEmailValid = emailRegex.test(email)
+    const isPhoneValid = phoneRegex.test(phone);
+
+    setIsSubmitDisabled(!(isNameValid && isEmailValid && isPhoneValid));
   };
 
   return (
@@ -90,7 +122,8 @@ const FormSection = () => {
                 id="name"
                 placeholder="Your Name"
                 value={name}
-                onChange={handleChange(setName, validateName)}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={() => { validateName(name); validateForm() }}
                 required
                 className={`mt-1 block w-full p-2 border ${nameError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
               />
@@ -102,7 +135,8 @@ const FormSection = () => {
                 id="email"
                 placeholder="Email"
                 value={email}
-                onChange={handleChange(setEmail, validateEmail)}
+                onChange={(e) => setEmail(e.target.value)}
+                onBlur={() => { validateEmail(email); validateForm() }}
                 required
                 className={`mt-1 block w-full p-2 border ${emailError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
               />
@@ -114,7 +148,8 @@ const FormSection = () => {
                 id="phone"
                 placeholder="Your Phone Number"
                 value={phone}
-                onChange={handleChange(setPhone, validatePhone)}
+                onChange={(e) => setPhone(e.target.value)}
+                onBlur={() => { validatePhone(phone); validateForm() }}
                 required
                 className={`mt-1 block w-full p-2 border ${phoneError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
               />

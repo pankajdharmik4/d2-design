@@ -10,8 +10,6 @@ import FormSection from './pages/ContactUs'
 import Footer from './pages/Footer'
 import AboutUs from './pages/AboutUs'
 import Navbar from './pages/Navbar'
-import Hero1 from './pages/Hero1'
-import Hero2 from './pages/Hero2'
 import HeroCarousel from './pages/HeroSection'
 import BookingModal from './pages/BookingModal'
 const App = () => {
