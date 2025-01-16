@@ -28,7 +28,7 @@ const App = () => {
        {/* <Hero1/> */}
        {/* <Hero2/> */}
        <HeroCarousel openModal={openModal}/>
-       <Bar/>
+       <Bar openModal={openModal}/>
        <BeforeAfterSection/>
        <AboutUs/>
        <InvisalignBenefitsSection/>
