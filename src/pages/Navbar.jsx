@@ -25,9 +25,9 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
-  useEffect(() => {
-    openModal();
-  }, []);
+  // useEffect(() => {
+  //   openModal();
+  // }, []);
 
   return (
     <>
