@@ -25,15 +25,11 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
-  // useEffect(() => {
-  //   openModal();
-  // }, []);
 
   return (
     <>
-      <nav className="w-full bg-[#00102d] px-4 lg:px-16">
+      <nav className="w-full bg-[#261FB3] px-4 lg:px-16">
         <div className="container mx-auto flex items-center justify-between px-4">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <img src="/images/logo.png" alt="Logo" className="h-16 md:h-24 lg:h-32 w-auto" />
           </div>
@@ -46,21 +42,21 @@ const Navbar = () => {
             <a href="#testimonial" className="text-white font-montserrat font-medium text-sm lg:text-lg">Testimonial</a>
           </div>
 
-          {/* Book Now Button and Contact for Desktop */}
+          {/* Book A Demo Button and Contact for Desktop */}
           <div className="hidden lg:flex flex-col items-center">
             <Button
               size="xs"
-              variant="fill"
+              variant="gradient"
               onClick={openModal}
               className="text-white min-w-[120px] lg:min-w-[200px] rounded-lg lg:rounded-[12px] border border-white px-4 lg:px-[34px] py-2 lg:py-[14px] font-montserrat font-medium"
             >
-              Book Now
+              Register/Login
             </Button>
 
             {/* Contact Number for Desktop */}
             <a href="tel:01784453448" className="text-white hover:text-gray-300 flex items-center text-xl mt-2">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
-              01784 453448
+              9309107552
             </a>
           </div>
 
@@ -86,15 +82,15 @@ const Navbar = () => {
               size="xs"
               variant="fill"
               onClick={openModal}
-              className="bg-[#00102d] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
+              className="bg-[#261FB3] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
             >
-              Book Now
+              Book A Demo
             </Button>
 
             {/* Contact Number for Mobile */}
-            <a href="tel:01784453448" className="text-black hover:text-[#00102d] flex items-center text-xl mt-4">
+            <a href="tel:01784453448" className="text-black hover:text-[#261FB3] flex items-center text-xl mt-4">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
-              01784 453448
+              9309107552
             </a>
           </div>
         )}

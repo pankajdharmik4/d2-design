@@ -277,7 +277,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                   : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 focus:ring-blue-500'}
               `}
             >
-              Book Now
+              Book 
             </button>
           </div>
         </form>
