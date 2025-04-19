@@ -40,7 +40,7 @@ export default function Footer({ ...props }) {
         <li>
           <a href="#" className="lg:text-[17px]">
             <Heading as="p" className="text-[20px] font-medium text-gray-900">
-              Why Invisalign?
+              Why medi-core?
             </Heading>
           </a>
         </li>

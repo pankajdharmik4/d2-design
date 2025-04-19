@@ -27,7 +27,7 @@ export default function InvisalignBenefitsSection() {
               </div> */}
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-               <b> Virtually Invisible:</b>  <br />Straighten your teeth discreetly with clear aligners that are barely noticeable.
+                  <b>📋 Streamlined Patient Management</b>  <br />Medi-core simplifies patient record-keeping with a secure, easy-to-use dashboard. Doctors can access complete patient histories, appointments, prescriptions, and reports — all in one place.
                 </h3>
               </div>
             </div>
@@ -43,39 +43,27 @@ export default function InvisalignBenefitsSection() {
               </div> */}
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                <b>Comfortable & Convenient:</b> <br />Removable aligners allow you to eat, drink, and brush as usual – no lifestyle interruptions.
+                  <b>⏱️ Time-Saving Appointment Scheduling</b> <br />Say goodbye to manual bookings! Medi-core lets you manage appointments efficiently with an intuitive calendar, reminders, and real-time updates for both staff and patients.
                 </h3>
               </div>
             </div>
 
             {/* Card 3 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              {/* <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div> */}
+
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                <b>Fast Results:</b><br />  Most of our cases are focused on cosmetic improvements in adults and are thus finished in as little as just 4-6 months
+                  <b>🔐 Secure & Compliant Data Storage</b><br /> Built with privacy in mind, medi-core ensures that patient data is stored securely with industry-standard encryption and role-based access — keeping you compliant with healthcare regulations.
                 </h3>
               </div>
             </div>
 
             {/* Card 4 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              {/* <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
-                <img 
-                  src="/images/img_image_8.png" 
-                  alt="Avatar" 
-                  className="h-14 w-14 object-cover rounded-full" 
-                />
-              </div> */}
+
               <div>
                 <h3 className="text-sm md:text-lg font-montserrat font-medium">
-                <b>Whole-Body Wellness:</b><br /> Straighter teeth are easier to clean, lowering the risk of gum disease and promoting better overall health.
+                  <b>📊 Insightful Reports & Analytics</b><br /> Get a clear overview of your clinic’s performance with real-time analytics — from patient flow to treatment outcomes — helping you make data-driven decisions and grow your practice.
                 </h3>
               </div>
             </div>

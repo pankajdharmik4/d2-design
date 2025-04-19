@@ -17,7 +17,7 @@ const BeforeAfterSection = () => {
   return (
     <div id="gallery" className="bg-[#AFDDFF] py-16">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
+        <h2 className="text-3xl font-bold text-[#1B56FD] text-center mb-10">
           Before & After Invisalign Treatment
         </h2>
 

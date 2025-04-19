@@ -18,9 +18,9 @@ const Footer = () => {
               </a>
             </p>
             <p className="font-montserrat font-medium">
-              <a href="mailto:info@rothleylodgedentalpractice.co.uk" className="text-black hover:text-[#3A59D1] text-sm mx-auto md:mx-0">
+              <a href="mailto:akhilwase2510@gmail.com" className="text-black hover:text-[#3A59D1] text-sm mx-auto md:mx-0">
                 <FontAwesomeIcon icon={faEnvelope} />
-                info@rothleylodgedentalpractice.co.uk
+                akhilwase2510@gmail.com
               </a>
             </p>
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
             <h3 className="text-lg mb-2 font-montserrat font-semibold">Quick Links</h3>
             <ul>
               <li><a href="#" className="text-black hover:text-[#3A59D1] font-montserrat font-medium">Home</a></li>
-              <li><a href="#about" className="text-black hover:text-[#3A59D1] font-montserrat font-medium">Why Invisalign?</a></li>
+              <li><a href="#about" className="text-black hover:text-[#3A59D1] font-montserrat font-medium">Why medi-core?</a></li>
               {/* <li><a href="#about" className="text-black hover:text-[#3A59D1] font-montserrat font-medium">How Invisalign Works?</a></li> */}
               <li><a href="#gallery" className="text-black hover:text-[#3A59D1] font-montserrat font-medium">Gallery</a></li>
               <li><a href="#faq" className="text-black hover:text-[#3A59D1] font-montserrat font-medium">FAQ</a></li>

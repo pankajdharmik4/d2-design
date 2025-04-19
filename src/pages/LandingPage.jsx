@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { landingTwo } from '../assets';
 
 export function LandingPage() {
-  return <div id="home" className="relative w-full h-full md:mb-2 bg-repeat bg-center bg-[#3A59D1]">
+  return <div id="home" className="relative w-full h-full bg-repeat bg-center bg-[#3A59D1]">
     <div className="relative w-full h-auto md:h-[500px] lg:h-[620px] flex flex-col-reverse md:flex-row">
       {/* Section 1: Text */}
       <div className="flex flex-col mb-7 items-center justify-center w-full lg:w-1/2 md:p-10 p-2 text-white">

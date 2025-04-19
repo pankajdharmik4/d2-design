@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Hero from './pages/Hero'
 import Bar from './pages/Bar'
 import InvisalignBenefitsSection from './pages/WhyLove'
-import HowItWorks from './pages/HowItWorks'
+import HowMediCoreWorks from './pages/HowItWorks'
 import BeforeAfterSection from './pages/BeforeAfter'
 import FAQSection from './pages/FAQ'
 import TestimonialsSection from './pages/TestimonialsSection'
@@ -24,12 +24,12 @@ const App = () => {
       <Navbar />
       <BookingModal isOpen={isModalOpen} onClose={closeModal} />
       <LandingPage openModal={openModal} />
-      <Bar openModal={openModal} />
-      <BeforeAfterSection />
-      <AboutUs />
+      {/* <Bar openModal={openModal} /> */}
+      {/* <BeforeAfterSection /> */}
       <InvisalignBenefitsSection />
-      <HowItWorks />
+      <AboutUs />
       <FAQSection />
+      <HowMediCoreWorks />
       <TestimonialsSection />
       <FormSection />
       <Footer />

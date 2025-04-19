@@ -10,8 +10,6 @@ const AboutUs = () => {
     "images/d2-1.png",
     "images/d2-2.jpeg",
     "images/d2-3.png",
-    // "images/brand-logo4.jpg",
-    // "images/brand-logo5.jpg",
   ];
 
 
@@ -32,25 +30,29 @@ const AboutUs = () => {
             {/* Section 2 - Title and Description */}
             <div className="w-full md:w-[60%] md:pl-12 text-center md:text-left px-4">
               <h2 className="text-2xl md:text-3xl text-white mb-6 font-lato font-bold">
-              Why Choose Rothley Lodge Dental for Invisalign?
+                Empowering Clinics & Hospitals with Smart Digital Healthcare – About medi-core
               </h2>
               <p className="text-white font-montserrat font-normal mb-4 text-sm md:text-md">
-                {/* At Rothley Lodge Dental practice, we combine over a century of family-focused care with cutting-edge technology. As the oldest dental practice in Staines, we’ve built lasting relationships with generations of families.  */}
-                Looking for a discreet way to straighten your teeth and achieve the smile you’ve always wanted? At Rothley Lodge Dental, the oldest dental practice in Staines-Upon-Thames, we combine decades of trusted care and award winning dentists with cutting-edge technology to deliver stunning results with Invisalign – the clear alternative to braces.
-              </p>
-              <p className="text-white font-montserrat font-normal text-xs mb-4 md:text-xs">
-              <b>Generations of Expertise:</b> Trusted by families in Surrey and beyond for over 40 years, our practice has a proud heritage of delivering exceptional dental care with thousands of smiles enhanced.
+                At <b>medi-core</b>, we believe in empowering healthcare professionals through smart, efficient, and reliable digital tools. We are a passionate team of developers and healthcare enthusiasts who saw the daily struggles of doctors and clinic staff in managing patient records, appointments, and operations.
               </p>
               <p className="text-white font-montserrat font-normal text-sm mb-4 md:text-xs">
-              <b>Award-Winning Team:</b> Our experienced clinicians, including the UK’s Best Young Dentist and previous President of the British Academy of Cosmetic Dentistry (BACD), provide unparalleled expertise to help you achieve your dream smile.
+                <b>Purpose-Driven Innovation:</b> Our goal is to simplify clinic and hospital management through a SaaS platform tailored to the real-world needs of healthcare professionals.
               </p>
               <p className="text-white font-montserrat font-normal text-sm mb-4 md:text-xs">
-              <b>Cutting Edge Technology:</b> Benefit from state-of-the-art tools like intra-oral scanners, 3D imaging and digital smile design for precise planning, augmented reality smile simulations and a comfortable, 5 Star Invisalign experience.
+                <b>Doctor-Centric Design:</b> Built with direct input from medical practitioners, medi-core helps streamline daily tasks like patient tracking, appointments, medical records, and billing — all in one secure place.
               </p>
               <p className="text-white font-montserrat font-normal text-sm mb-4 md:text-xs">
-              <b>First Class Care:</b> We have treated everyone from supermodels and premiership footballers to celebrity musicians and actors but all of our patients get the VIP service - we design your treatment to fit your unique lifestyle and goals, ensuring a comfortable, efficient and predictable journey from start to finish. 
+                <b>Secure & Scalable:</b> Whether you're a local clinic or a growing healthcare facility, medi-core grows with you — keeping your data safe and your workflow smooth.
+              </p>
+              <p className="text-white font-montserrat font-normal text-sm mb-4 md:text-xs">
+                <b>Advanced Analytics & Insights:</b> Make informed decisions with powerful dashboards and reporting tools that offer real-time visibility into patient data, appointment trends, and operational performance.
+              </p>
+              <p className="text-white font-montserrat font-normal text-sm mb-4 md:text-xs">
+                <b>Your Digital Healthcare Partner:</b> With real-time insights and easy accessibility, medi-core empowers you to focus more on your patients and less on paperwork.
               </p>
             </div>
+
+
           </div>
         </div>
       </div>

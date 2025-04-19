@@ -36,7 +36,7 @@ const Navbar = () => {
 
           {/* Desktop Nav Links */}
           <div className="hidden space-x-4 md:space-x-8 lg:flex">
-            <a href="#home" className="text-white font-montserrat font-medium text-sm lg:text-lg">Why Invisalign</a>
+            <a href="#home" className="text-white font-montserrat font-medium text-sm lg:text-lg">Why medi-core</a>
             <a href="#about" className="text-white font-montserrat font-medium text-sm lg:text-lg">About Us</a>
             <a href="#faq" className="text-white font-montserrat font-medium text-sm lg:text-lg">FAQ</a>
             <a href="#testimonial" className="text-white font-montserrat font-medium text-sm lg:text-lg">Testimonial</a>
@@ -73,7 +73,7 @@ const Navbar = () => {
         {/* Mobile Navbar Links */}
         {isMenuOpen && (
           <div className="lg:hidden z-40 bg-white absolute top-16 left-0 right-0 shadow-lg p-4">
-            <a href="#home" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">Why Invisalign</a>
+            <a href="#home" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">Why medi-core</a>
             <a href="#about" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">About Us</a>
             <a href="#faq" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">FAQ</a>
             <a href="#testimonial" onClick={closeMenu} className="block font-montserrat font-medium text-black py-2">Testimonial</a>

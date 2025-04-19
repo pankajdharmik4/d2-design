@@ -12,7 +12,7 @@ export default function Header({ ...props }) {
         <li>
           <a href="#" className="lg:text-[17px]">
             <Heading size="textmd" as="p" className="text-[21.33px] font-medium text-white-a700">
-              Why Invisalign
+              Why medi-core
             </Heading>
           </a>
         </li>

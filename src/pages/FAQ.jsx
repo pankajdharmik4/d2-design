@@ -1,33 +1,41 @@
 import React, { useState } from 'react';
 
 const faqs = [
-  // {
-  //   question: "Is Invisalign painful?",
-  //   answer: ["While some people may experience mild discomfort during treatment, it is generally not considered painful.",
-  //     "During the initial stages of Invisalign treatment, some people may experience slight discomfort or pressure as their teeth shift into the correct position. This is a normal part of the process, and it usually only lasts a few days after switching to a new set of aligners.",
-  //     "Discomfort can typically be managed with over-the-counter pain relievers, such as ibuprofen."]
-  // },
   {
-    question: "Is Invisalign noticeable?",
-    answer: ["The aligners are made of clear, flexible plastic that is virtually invisible when worn. This makes them a popular alternative to traditional metal braces, which can be more noticeable."]
-  },
-  // {
-  //   question: "How often do I change aligners?",
-  //   answer: ["The frequency with which you should change your Invisalign® aligners depends on the specific treatment plan created for you by your orthodontist.",
-  //     "In general, however, you can expect to change your aligners approximately every 1-2 weeks."
-  //   ]
-  // },
-  {
-    question: "How long does Invisalign Treatment take?",
-    answer: ["Invisalign clear aligners can help straighten minor to complex teeth misalignment. The length of treatment can take, on average, 4-12 months, depending on how complicated your case is. Most of our smiles are completed within 4-7 months."]
+    question: "What is Medi Core?",
+    answer: [
+      "Medi Core is a SaaS-based Hospital and Clinic Management System designed to simplify daily operations for doctors and healthcare providers. It helps manage patient records, appointments, billing, and more—all from one centralized platform."
+    ]
   },
   {
-    question: "How much does Invisalign Cost?",
-    answer: ["The cost of Invisalign is determined by your specific needs, including the duration of treatment and the type of correction you are looking for. We offer payment financing plans to help you spread the cost—just ask for details when booking your appointment."]
+    question: "Is my data safe with Medi Core?",
+    answer: [
+      "Yes! Medi Core uses industry-standard encryption and secure cloud infrastructure to ensure that your patient data remains private, safe, and compliant with healthcare regulations."
+    ]
   },
   {
-    question: "After finishing treatment, how long do you need to wear retainers?",
-    answer: ["To keep your teeth straight, you'll need to wear retainers for as long as you want your smile to stay straight! So forever! At our practice, we recommend a dual retention protocol—a combination of fixed and removable retainers—for predictable, long-term results. This ensures your new smile stays exactly where it should for the long term!"]
+    question: "Can I access Medi Core from multiple devices?",
+    answer: [
+      "Absolutely. Being a cloud-based application, Medi Core is accessible from desktops, tablets, and smartphones—anywhere, anytime."
+    ]
+  },
+  {
+    question: "Is Medi Core suitable for small clinics?",
+    answer: [
+      "Yes! Medi Core is designed to scale, making it perfect for individual practitioners, small clinics, and larger hospital setups alike."
+    ]
+  },
+  {
+    question: "Do I need technical knowledge to use Medi Core?",
+    answer: [
+      "Not at all. Medi Core features a clean, user-friendly interface that anyone can use—no IT background required. Plus, we offer full onboarding support to get you started quickly."
+    ]
+  },
+  {
+    question: "Can I track appointments and patient history?",
+    answer: [
+      "Yes, Medi Core offers a complete patient tracking system—view appointment history, medical records, and treatment progress in just a few clicks."
+    ]
   },
 ];
 
@@ -55,7 +63,7 @@ const FAQSection = () => {
                 <span>{openIndex === index ? '-' : '+'}</span>
               </button>
               {openIndex === index && (
-                <div className="mt-2 p-4 bg-gray-200 rounded-lg font-montserrat font-semibold">
+                <div className="mt-2 p-4 bg-[#E8F9FF] rounded-lg font-montserrat font-semibold">
                   {faq.answer.map((ans) => <p>{ans}</p>)}
                 </div>
               )}

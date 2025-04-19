@@ -3,40 +3,28 @@ import React, { useRef } from 'react';
 const testimonials = [
   {
     image: 'images/img_image_11.png',
-    name: 'Maria',
-    comment: 'I was always unhappy with the gaps in my teeth but kept putting it off. Then I came to the Open Day and met Dr. Simon Chard. Starting Invisalign was the best decision—I can’t stop smiling now!',
+    name: 'Dr. Ayesha Khan',
+    comment: 'Medi-Core has completely streamlined our patient management. From appointment scheduling to prescription tracking, it’s a game-changer for small clinics like ours.',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Adelina',
-    comment: 'I discovered the clinic on Instagram and decided to book a consultation with Gemma for Invisalign, teeth whitening, and cosmetic bonding. I’m so happy with my results—it’s the best decision I’ve ever made for my smile!',
+    name: 'Dr. Rohit Mehta',
+    comment: 'Our staff used to struggle with managing patient records and billing. Now everything is centralized and secure—Medi-Core saves us hours of manual work every week.',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Victoria',
-    comment: 'I’ve been a patient here for 8 years and decided to treat myself for my birthday by starting Invisalign after attending the Open Evening. I’m so excited to have a bright, amazing smile just in time for my special day!',
+    name: 'Dr. Sarah Thomas',
+    comment: 'I was skeptical at first, but Medi-Core has exceeded expectations. The UI is clean, the analytics are useful, and support is very responsive.',
     rating: 5,
   },
   {
     image: 'images/img_image_11.png',
-    name: 'Poppy',
-    comment: 'I used to be so unhappy with my smile and was always nervous about going to the dentist. But after having Invisalign, bonding, and whitening with Dr. Simon Chard, I finally feel confident and couldn’t be happier with my new smile!',
+    name: 'Dr. Anil Deshmukh',
+    comment: 'As a hospital administrator, I’ve tried many systems—none as intuitive as Medi-Core. It’s perfect for multi-department coordination and helps us deliver better care.',
     rating: 5,
   },
-  // {
-  //   image: 'images/img_image_11.png',
-  //   name: 'Daniel K.',
-  //   comment: 'Invisalign was life-changing! The staff were kind and professional throughout',
-  //   rating: 5,
-  // },
-  // {
-  //   image: 'images/img_image_11.png',
-  //   name: 'Edward Elric',
-  //   comment: 'Making an appointment is very easy because it can be done online so it can save a lot of things and be done more clearly.',
-  //   rating: 5,
-  // },
 ];
 
 const TestimonialsSection = () => {

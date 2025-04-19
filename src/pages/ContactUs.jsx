@@ -12,10 +12,6 @@ const FormSection = () => {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-  const [recaptchaToken, setRecaptchaToken] = useState('');
-  const [isVerifying, setIsVerifying] = useState(false);
-  const [recaptchaChecked, setRecaptchaChecked] = useState(false);
-
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^\+?[0-9]{10,13}$/;
@@ -29,52 +25,10 @@ const FormSection = () => {
   // State to disable the submit button
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
 
-
-  const recaptchaSiteKey = '6Lf_kLcqAAAAAEWDyplOb-RdtEcDmC-4ZnYqTE4j';
-
-  useEffect(() => {
-    loadRecaptcha();
-  }, []);
-
   // Add useEffect to validate form whenever inputs change
   useEffect(() => {
     validateForm();
-  }, [name, email, phone, recaptchaToken, recaptchaChecked]);
-
-  const loadRecaptcha = () => {
-    if (!window.grecaptcha) {
-      const script = document.createElement('script');
-      script.src = `https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`;
-      script.onload = () => console.log('reCAPTCHA script loaded');
-      script.onerror = () => console.error('Failed to load reCAPTCHA script');
-      document.body.appendChild(script);
-    }
-  };
-
-  const handleRecaptchaCheck = async (e) => {
-    const checked = e.target.checked;
-    setRecaptchaChecked(checked);
-
-    if (checked) {
-      setIsVerifying(true);
-      try {
-        if (window.grecaptcha) {
-          const token = await window.grecaptcha.execute(recaptchaSiteKey, { action: 'submit' });
-          console.log("tooken", token)
-          setRecaptchaToken(token);
-        } else {
-          setRecaptchaChecked(false);
-        }
-      } catch (error) {
-        console.error('reCAPTCHA error:', error);
-        setRecaptchaChecked(false);
-      } finally {
-        setIsVerifying(false);
-      }
-    } else {
-      setRecaptchaToken('');
-    }
-  };
+  }, [name, email, phone]);
 
 
   // Validation functions
@@ -113,20 +67,13 @@ const FormSection = () => {
     if (!isSubmitDisabled) {
       setIsSubmitDisabled(true);
       try {
-        const response = await axios.post('https://www.invisalign.rothleylodgedentalpractice.co.uk/my_server_project/public/index.php', {
-          name, email, phone, message, recaptchaToken,
-          type: 'Invisalign',
-        });
+        // api call 
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+        onClose();
 
-        if (response.data.success) {
-          setName('');
-          setEmail('');
-          setPhone('');
-          setMessage('');
-          setRecaptchaChecked(false);
-          setRecaptchaToken('');
-          onClose();
-        }
       } catch (error) {
         console.error("Error sending request: ", error.response ? error.response.data : error.message);
       } finally {
@@ -160,7 +107,7 @@ const FormSection = () => {
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="bg-white shadow-lg rounded-lg p-6 md:w-[80%]">
             <h2 className="text-2xl mb-1 text-center font-montserrat font-semibold">
-              Take The First Step Toward The Smile You’ve Always Wanted
+              Take The First Step Toward The  Technology
             </h2>
             <div className="mb-4">
               <p class="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
@@ -214,43 +161,6 @@ const FormSection = () => {
                   onChange={(e) => setMessage(e.target.value)}
                   className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400"
                 />
-              </div>
-              <div className="mt-6 mb-6">
-                <div className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 hover:bg-[#AFDDFF] transition-colors">
-                  <div className="flex items-center space-x-3">
-                    <label className="relative flex items-center cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={recaptchaChecked}
-                        onChange={handleRecaptchaCheck}
-                        disabled={isVerifying}
-                        className="sr-only peer"
-                      />
-                      <div className={`
-                                  w-6 h-6 rounded-md border-2
-                                  ${isVerifying ? 'bg-[#AFDDFF] border-gray-300' :
-                          recaptchaChecked ? 'bg-blue-500 border-blue-500' : 'bg-white border-gray-300'}
-                                  flex items-center justify-center
-                                  transition-all duration-200
-                                  peer-disabled:opacity-50
-                                `}>
-                        {isVerifying ? (
-                          <Loader2 className="w-4 h-4 text-gray-400 animate-spin" />
-                        ) : recaptchaChecked ? (
-                          <Check className="w-4 h-4 text-white" />
-                        ) : null}
-                      </div>
-                    </label>
-                    <span className="text-sm font-medium text-gray-700">
-                      {isVerifying ? 'Verifying...' : 'I\'m not a robot'}
-                    </span>
-                  </div>
-                  <img
-                    src="/images/recaptcha.png"
-                    alt="reCAPTCHA"
-                    className="h-6 w-6 object-contain"
-                  />
-                </div>
               </div>
               <button
                 type="submit"
