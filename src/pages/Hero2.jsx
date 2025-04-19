@@ -21,7 +21,7 @@ const Hero2 = ({ openModal }) => {
       <div className="w-full flex flex-col justify-center items-center md:items-end p-4 md:p-12 lg:p-16 md:absolute md:bottom-0 md:right-[5%] md:w-2/5">
         <button
           onClick={openModal}
-          className="text-white text-xs md:text-sm lg:text-xl bg-[#261FB3] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48"
+          className="text-white text-xs md:text-sm lg:text-xl bg-[#3A59D1] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left md:mt-48"
         >
           Get a Free Consultation
         </button>

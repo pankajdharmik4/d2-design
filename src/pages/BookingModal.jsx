@@ -219,7 +219,7 @@ const BookingModal = ({ isOpen, onClose }) => {
             </div>
 
             <div className="mt-6">
-              <div className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+              <div className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 hover:bg-[#AFDDFF] transition-colors">
                 <div className="flex items-center space-x-3">
                   <label className="relative flex items-center cursor-pointer">
                     <input
@@ -231,7 +231,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                     />
                     <div className={`
                       w-6 h-6 rounded-md border-2
-                      ${isVerifying ? 'bg-gray-100 border-gray-300' :
+                      ${isVerifying ? 'bg-[#AFDDFF] border-gray-300' :
                         recaptchaChecked ? 'bg-blue-500 border-blue-500' : 'bg-white border-gray-300'}
                       flex items-center justify-center
                       transition-all duration-200
@@ -261,7 +261,7 @@ const BookingModal = ({ isOpen, onClose }) => {
             <button
               type="button"
               onClick={onClose}
-              className="px-6 py-2.5 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 active:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300"
+              className="px-6 py-2.5 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 active:bg-[#AFDDFF] transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300"
             >
               Cancel
             </button>
@@ -273,7 +273,7 @@ const BookingModal = ({ isOpen, onClose }) => {
                 transition-all duration-200
                 focus:outline-none focus:ring-2 focus:ring-opacity-50
                 ${isSubmitDisabled
-                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                  ? 'bg-[#AFDDFF] text-gray-400 cursor-not-allowed'
                   : 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 focus:ring-blue-500'}
               `}
             >

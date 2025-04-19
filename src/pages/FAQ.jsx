@@ -39,7 +39,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div id="faq" className="bg-gray-100 py-16">
+    <div id="faq" className="bg-[#AFDDFF] py-16">
       <div className="container mx-auto px-6">
         <h2 className="font-lato font-bold text-3xl text-gray-800 text-center mb-10">
           Frequently Asked Questions

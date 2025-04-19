@@ -144,121 +144,123 @@ const FormSection = () => {
   };
 
   return (
-    <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
-      {/* Image Section */}
-      <div className="flex-1 flex items-center justify-center p-4">
-        <ReactCompareSlider
-          itemOne={<ReactCompareSliderImage src={beforeImage} alt="Before" />}
-          itemTwo={<ReactCompareSliderImage src={afterImage} alt="After" />}
-          position={50}
-          className="w-[80%] h-auto"
-        />
-      </div>
+    <div className="bg-[#3A59D1]">
+      <div id='contactus' className="flex flex-col md:flex-row py-16 mx-[5%] lg:mx-[10%]">
+        {/* Image Section */}
+        <div className="flex-1 flex items-center justify-center p-4">
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src={beforeImage} alt="Before" />}
+            itemTwo={<ReactCompareSliderImage src={afterImage} alt="After" />}
+            position={50}
+            className="w-[80%] h-auto"
+          />
+        </div>
 
-      {/* Form Section */}
-      <div className="flex-1 flex items-center justify-center p-4">
-        <div className="bg-white shadow-lg rounded-lg p-6 md:w-[80%]">
-          <h2 className="text-2xl mb-1 text-center font-montserrat font-semibold">
-            Take The First Step Toward The Smile You’ve Always Wanted
-          </h2>
-          <div className="mb-4">
-            <p class="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
-          </div>
-          <form onSubmit={handleSubmit}>
+        {/* Form Section */}
+        <div className="flex-1 flex items-center justify-center p-4">
+          <div className="bg-white shadow-lg rounded-lg p-6 md:w-[80%]">
+            <h2 className="text-2xl mb-1 text-center font-montserrat font-semibold">
+              Take The First Step Toward The Smile You’ve Always Wanted
+            </h2>
             <div className="mb-4">
-              <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                onBlur={() => { validateName(name); validateForm() }}
-                required
-                className={`mt-1 block w-full p-2 border ${nameError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
-              />
-              {nameError && <p className="text-red-500 text-sm">{nameError}</p>}
+              <p class="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
             </div>
-            <div className="mb-4">
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onBlur={() => { validateEmail(email); validateForm() }}
-                required
-                className={`mt-1 block w-full p-2 border ${emailError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
-              />
-              {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
-            </div>
-            <div className="mb-4">
-              <input
-                type="tel"
-                id="phone"
-                placeholder="Your Phone Number"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                onBlur={() => { validatePhone(phone); validateForm() }}
-                required
-                className={`mt-1 block w-full p-2 border ${phoneError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
-              />
-              {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
-            </div>
-            <div className="mb-4">
-              <textarea
-                type="text"
-                id="message"
-                placeholder="Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400"
-              />
-            </div>
-            <div className="mt-6 mb-6">
-              <div className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-                <div className="flex items-center space-x-3">
-                  <label className="relative flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={recaptchaChecked}
-                      onChange={handleRecaptchaCheck}
-                      disabled={isVerifying}
-                      className="sr-only peer"
-                    />
-                    <div className={`
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  onBlur={() => { validateName(name); validateForm() }}
+                  required
+                  className={`mt-1 block w-full p-2 border ${nameError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
+                />
+                {nameError && <p className="text-red-500 text-sm">{nameError}</p>}
+              </div>
+              <div className="mb-4">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onBlur={() => { validateEmail(email); validateForm() }}
+                  required
+                  className={`mt-1 block w-full p-2 border ${emailError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
+                />
+                {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
+              </div>
+              <div className="mb-4">
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Your Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  onBlur={() => { validatePhone(phone); validateForm() }}
+                  required
+                  className={`mt-1 block w-full p-2 border ${phoneError ? 'border-red-500' : 'border-gray-300'} rounded-md placeholder-gray-400`}
+                />
+                {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
+              </div>
+              <div className="mb-4">
+                <textarea
+                  type="text"
+                  id="message"
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="mt-1 block w-full p-2 border border-gray-300 rounded-md placeholder-gray-400"
+                />
+              </div>
+              <div className="mt-6 mb-6">
+                <div className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 hover:bg-[#AFDDFF] transition-colors">
+                  <div className="flex items-center space-x-3">
+                    <label className="relative flex items-center cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={recaptchaChecked}
+                        onChange={handleRecaptchaCheck}
+                        disabled={isVerifying}
+                        className="sr-only peer"
+                      />
+                      <div className={`
                                   w-6 h-6 rounded-md border-2
-                                  ${isVerifying ? 'bg-gray-100 border-gray-300' :
-                        recaptchaChecked ? 'bg-blue-500 border-blue-500' : 'bg-white border-gray-300'}
+                                  ${isVerifying ? 'bg-[#AFDDFF] border-gray-300' :
+                          recaptchaChecked ? 'bg-blue-500 border-blue-500' : 'bg-white border-gray-300'}
                                   flex items-center justify-center
                                   transition-all duration-200
                                   peer-disabled:opacity-50
                                 `}>
-                      {isVerifying ? (
-                        <Loader2 className="w-4 h-4 text-gray-400 animate-spin" />
-                      ) : recaptchaChecked ? (
-                        <Check className="w-4 h-4 text-white" />
-                      ) : null}
-                    </div>
-                  </label>
-                  <span className="text-sm font-medium text-gray-700">
-                    {isVerifying ? 'Verifying...' : 'I\'m not a robot'}
-                  </span>
+                        {isVerifying ? (
+                          <Loader2 className="w-4 h-4 text-gray-400 animate-spin" />
+                        ) : recaptchaChecked ? (
+                          <Check className="w-4 h-4 text-white" />
+                        ) : null}
+                      </div>
+                    </label>
+                    <span className="text-sm font-medium text-gray-700">
+                      {isVerifying ? 'Verifying...' : 'I\'m not a robot'}
+                    </span>
+                  </div>
+                  <img
+                    src="/images/recaptcha.png"
+                    alt="reCAPTCHA"
+                    className="h-6 w-6 object-contain"
+                  />
                 </div>
-                <img
-                  src="/images/recaptcha.png"
-                  alt="reCAPTCHA"
-                  className="h-6 w-6 object-contain"
-                />
               </div>
-            </div>
-            <button
-              type="submit"
-              className={isSubmitDisabled ? "w-full bg-[#808080] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#808080] transition duration-300" : "w-full bg-[#261FB3] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300"}
-              disabled={isSubmitDisabled}
-            >
-              Book A Demo
-            </button>
-          </form>
+              <button
+                type="submit"
+                className={isSubmitDisabled ? "w-full bg-[#808080] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#808080] transition duration-300" : "w-full bg-[#3A59D1] text-white font-montserrat font-semibold p-2 rounded-md hover:bg-[#2e3d81] transition duration-300"}
+                disabled={isSubmitDisabled}
+              >
+                Book A Demo
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

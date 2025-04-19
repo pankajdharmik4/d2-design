@@ -16,7 +16,7 @@ const AboutUs = () => {
 
 
   return (
-    <div id="about" className="relative bg-[#261FB3]">
+    <div id="about" className="relative bg-[#3A59D1]">
       <div className=" py-16">
         <div className="container mx-auto px-6 md:px-[2%]">
           <div className="flex flex-col md:flex-row items-center">
@@ -54,18 +54,18 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto px-6 md:px-[10%] py-10 bg-[#261FB3]">
+      <div className="mx-auto px-6 md:px-[10%] py-10 bg-[#3A59D1]">
         {/* Desktop View */}
-        <div className="hidden md:flex justify-between items-center bg-[#261FB3]">
+        <div className="hidden md:flex justify-between items-center bg-[#3A59D1]">
           {images.map((src, index) => (
             <div
               key={index}
-              className="flex justify-center items-center w-[20%] h-24 bg-[#261FB3]"
+              className="flex justify-center items-center w-[20%] h-24 bg-[#3A59D1]"
             >
               <img
                 src={src}
                 alt={`Image ${index + 1}`}
-                className="h-full max-w-full object-contain bg-[#261FB3]"
+                className="h-full max-w-full object-contain bg-[#3A59D1]"
               />
             </div>
           ))}

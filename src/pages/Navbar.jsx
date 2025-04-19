@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-[#261FB3] px-4 lg:px-16">
+      <nav className="w-full bg-[#1B56FD] px-4 lg:px-16">
         <div className="container mx-auto flex items-center justify-between px-4">
           <div className="flex-shrink-0">
             <img src="/images/logo.png" alt="Logo" className="h-16 md:h-24 lg:h-32 w-auto" />
@@ -82,13 +82,13 @@ const Navbar = () => {
               size="xs"
               variant="fill"
               onClick={openModal}
-              className="bg-[#261FB3] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
+              className="bg-[#3A59D1] text-white mt-4 w-full py-2 rounded-lg font-montserrat font-medium"
             >
               Book A Demo
             </Button>
 
             {/* Contact Number for Mobile */}
-            <a href="tel:01784453448" className="text-black hover:text-[#261FB3] flex items-center text-xl mt-4">
+            <a href="tel:01784453448" className="text-black hover:text-[#3A59D1] flex items-center text-xl mt-4">
               <FontAwesomeIcon icon={faPhone} className="mr-2" />
               9309107552
             </a>

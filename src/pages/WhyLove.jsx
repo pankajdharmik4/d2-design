@@ -2,7 +2,7 @@ export default function InvisalignBenefitsSection() {
   return (
     <>
       {/* Invisalign benefits section */}
-      <div className="bg-gray-100 py-16">
+      <div className="bg-[#AFDDFF] py-16">
         <div className="container mx-auto px-6">
           {/* Section Heading and Side Text */}
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 md:mx-[10%]">
@@ -18,7 +18,7 @@ export default function InvisalignBenefitsSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-[10%]">
             {/* Card 1 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              {/* <div className="bg-[#261FB3] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
@@ -34,7 +34,7 @@ export default function InvisalignBenefitsSection() {
 
             {/* Card 2 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              {/* <div className="bg-[#261FB3] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
@@ -50,7 +50,7 @@ export default function InvisalignBenefitsSection() {
 
             {/* Card 3 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              {/* <div className="bg-[#261FB3] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
@@ -66,7 +66,7 @@ export default function InvisalignBenefitsSection() {
 
             {/* Card 4 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              {/* <div className="bg-[#261FB3] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              {/* <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
@@ -82,7 +82,7 @@ export default function InvisalignBenefitsSection() {
 
             {/* Card 5 */}
             {/* <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#261FB3] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 
@@ -98,7 +98,7 @@ export default function InvisalignBenefitsSection() {
 
             {/* Card 6 */}
             {/* <div className="bg-white border border-gray-200 rounded-3xl p-4 flex items-center">
-              <div className="bg-[#261FB3] rounded-full h-16 w-16 flex items-center justify-center mr-4">
+              <div className="bg-[#3A59D1] rounded-full h-16 w-16 flex items-center justify-center mr-4">
                 <img 
                   src="/images/img_image_8.png" 
                   alt="Avatar" 

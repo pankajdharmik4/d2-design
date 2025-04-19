@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div id='testimonial' className="py-16 relative bg-gray-100">
+    <div id='testimonial' className="py-16 relative bg-[#AFDDFF]">
       <div className="container mx-auto px-6 lg:px-[10%]">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <h2 className="text-4xl text-gray-800 mb-4 md:mb-0 font-lato font-bold">Our Reviews</h2>
@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
             {/* Right Button with White Arrow */}
             <button
               onClick={scrollRight}
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#261FB3] text-white hover:bg-blue-600 transition duration-300 mx-2"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#3A59D1] text-white hover:bg-blue-600 transition duration-300 mx-2"
             >
               {/* Right Arrow (with tail) */}
               <svg

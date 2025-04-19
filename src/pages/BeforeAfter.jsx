@@ -15,7 +15,7 @@ const BeforeAfterSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="gallery" className="bg-gray-100 py-16">
+    <div id="gallery" className="bg-[#AFDDFF] py-16">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
           Before & After Invisalign Treatment

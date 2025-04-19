@@ -8,7 +8,7 @@ const Hero3 = ({ openModal }) => {
     <>
     <div className="relative w-full md:h-screen  md:mb-2 bg-cover bg-center z-20" style={{ backgroundImage: "url('/images/bg-img2.png')" }}>
       {/* Mobile View */}
-      <div className="px-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#261FB3] p-4">
+      <div className="px-8 md:hidden relative w-full h-full flex flex-col items-center justify-center text-center bg-[#3A59D1] p-4">
         <img
           src="/images/hero_2.png" // Replace with the actual image path
           alt="About Us"
@@ -30,7 +30,7 @@ const Hero3 = ({ openModal }) => {
         </p> */}
         <button
           onClick={openModal}
-          className="bg-white text-xs md:text-sm lg:text-xl text-[#261FB3] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mt-[5%]"
+          className="bg-white text-xs md:text-sm lg:text-xl text-[#3A59D1] font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg font-lato text-left lg:self-start mx-[7%] md:mb-0 mt-[5%]"
         >
             Get a Free Consultation
             </button>
