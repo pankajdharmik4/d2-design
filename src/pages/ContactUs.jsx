@@ -110,7 +110,7 @@ const FormSection = () => {
               Take The First Step Toward The  Technology
             </h2>
             <div className="mb-4">
-              <p class="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
+              <p className="text-gray-400 text-xs">Please fill out your details and a member of our team will be in touch.</p>
             </div>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
